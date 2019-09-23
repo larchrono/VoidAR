@@ -2,7 +2,7 @@
 /// <summary>
 /// 旧版本云识别兼容，新版本废弃，改为ImageTargetBehaviour
 /// </summary>
-public class Marker : ImageTargetBase
+public class Marker_Map : ImageTargetBase
 {
     void Start() {
         GameObject quad = transform.Find("MarkerQuad").gameObject;
