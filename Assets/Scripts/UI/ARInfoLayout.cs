@@ -40,7 +40,7 @@ public class ARInfoLayout : PanelExtendtion
 
         Go2D.onClick.AddListener(Enable2DGo);
 
-        
+        Open2D.onClick.AddListener(OpenAR2D);
     }
 
     void Update(){
@@ -96,8 +96,8 @@ public class ARInfoLayout : PanelExtendtion
         GoadRange.text = "距離 " + value.ToString("#.#") + " m";
     }
 
-    void OpenAR(){
-        
+    void OpenAR2D(){
+        AR2DLayout.instance.gameObject.SetActive(true);
     }
 
     void CloseInfo(){

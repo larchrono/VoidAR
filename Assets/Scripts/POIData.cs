@@ -29,6 +29,7 @@ public class POIData : MonoBehaviour
     public Sprite ArtistPhoto;
     [TextArea] public string ArtistContent;
     public string ArtistCopyright;
+    public GameObject UseModel;
 
     [Header("Old Picture")]
     public string ViewpointName;
@@ -36,6 +37,7 @@ public class POIData : MonoBehaviour
     public Sprite ViewpointPhoto;
     public string PhotoAge;
     public string PhotoSource;
+    public GameObject UseMask;
 
 
     void Start()
