@@ -10,7 +10,6 @@ public class POIData : MonoBehaviour
     public SpriteRenderer Icon;
     public Transform GizmoColliRange;
     SphereCollider eventCollider;
-    public bool CanStartAR = false;
     public TypeOfPOI typeOfPOI;
 
     [Header("POI Datas") , Space(40)]

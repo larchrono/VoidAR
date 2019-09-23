@@ -11,6 +11,8 @@ public class PlayerEvent : MonoBehaviour
     GetDistance distanceTool;
 
     public Action<double> OnUpdateDistance;
+    
+    public POIData arrivePOI;
 
     void Awake(){
         instance = this;
@@ -47,12 +49,14 @@ public class PlayerEvent : MonoBehaviour
         return distanceTool.GetSingleDistance(transform, target);
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "POI")
         {
+            arrivePOI = other.GetComponent<POIData>();
             other.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
-            other.gameObject.GetComponent<POIData>().CanStartAR = true;
+            ARInfoLayout.instance.PanelNaving.FinishedNaving(arrivePOI, GetTargetDistance(arrivePOI.transform));
+            
         }
     }
 
@@ -60,8 +64,9 @@ public class PlayerEvent : MonoBehaviour
     {
         if (other.tag == "POI")
         {
+            arrivePOI = null;
             other.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.white;
-            other.gameObject.GetComponent<POIData>().CanStartAR = false;
+            
         }
     }
 }

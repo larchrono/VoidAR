@@ -16,11 +16,12 @@ public class NavingLayout : PanelExtendtion
     void DoBTNClose(){
         CloseSelf();
         ARInfoLayout.instance.Stop2DGo();
+        ARInfoLayout.instance.OpenSelf(null);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void FinishedNaving(POIData data, double distance){
+        CloseSelf();
+        ARInfoLayout.instance.Stop2DGo();
+        ARInfoLayout.instance.OpenPanelRegular(data, distance);
     }
 }

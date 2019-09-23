@@ -28,7 +28,7 @@ public class ARInfoLayout : PanelExtendtion
     public Text CopyrightText;
 
     public POIData currentData;
-
+ 
     void Awake() {
         instance = this;
     }
@@ -48,6 +48,23 @@ public class ARInfoLayout : PanelExtendtion
 
     }
 
+    public void OpenPanelRegular(POIData data , double distance){
+        currentData = data;
+
+        if(data.typeOfPOI == POIData.TypeOfPOI.AR)
+            ARInfoLayout.instance.RefreshInfoAR_FromPOI();
+        else if (data.typeOfPOI == POIData.TypeOfPOI.OldPicture)
+            ARInfoLayout.instance.RefreshInfoOldPhoto_FromPOI();
+        else if (data.typeOfPOI == POIData.TypeOfPOI.Bus)
+            ARInfoLayout.instance.RefreshInfoBus_FromPOI();
+        else if (data.typeOfPOI == POIData.TypeOfPOI.ArtGallery)
+            ARInfoLayout.instance.RefreshInfoGallery_FromPOI();
+
+         ARInfoLayout.instance.SetMeterDistanceDisplay(distance);
+         CheckOpenARReady();
+         OpenSelf(null);
+    }
+
     void Enable2DGo(){
         PlayerEvent.instance.SetTargetGoal(currentData.transform);
         PlayerEvent.instance.OnUpdateDistance += OnUpdateDistance;
@@ -58,7 +75,16 @@ public class ARInfoLayout : PanelExtendtion
     public void Stop2DGo(){
         PlayerEvent.instance.ClearTargetGoal();
         PlayerEvent.instance.OnUpdateDistance = null;
-        OpenSelf(null);
+    }
+
+    public void CheckOpenARReady(){
+        if(currentData == PlayerEvent.instance.arrivePOI){
+            Open2D.interactable = true;
+            Open3D.interactable = true;
+        } else {
+            Open2D.interactable = false;
+            Open3D.interactable = false;
+        }
     }
 
     void OnUpdateDistance(double value){
@@ -96,8 +122,8 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.text = currentData.ArtContent;
         CopyrightText.text = currentData.ArtCopyright;
 
-        Open2D.interactable = true;
-        Open3D.interactable = true;
+        Open2D.gameObject.SetActive(true);
+        Open3D.gameObject.SetActive(true);
 
         contentSizeController.ResizeContent();
     }
@@ -120,8 +146,8 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.text = currentData.ViewpointContent;
         CopyrightText.text = "";
 
-        Open2D.interactable = true;
-        Open3D.interactable = true;
+        Open2D.gameObject.SetActive(true);
+        Open3D.gameObject.SetActive(true);
         
         contentSizeController.ResizeContent();
     }
@@ -144,8 +170,8 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.text = "";
         CopyrightText.text = "";
 
-        Open2D.interactable = false;
-        Open3D.interactable = false;
+        Open2D.gameObject.SetActive(false);
+        Open3D.gameObject.SetActive(false);
         
         contentSizeController.ResizeContent();
     }
@@ -168,8 +194,8 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.text = "";
         CopyrightText.text = "";
 
-        Open2D.interactable = false;
-        Open3D.interactable = false;
+        Open2D.gameObject.SetActive(false);
+        Open3D.gameObject.SetActive(false);
         
         contentSizeController.ResizeContent();
     }
