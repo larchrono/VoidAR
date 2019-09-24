@@ -26,4 +26,7 @@ public class UITabCenter : MonoBehaviour
 
 
     public ArtistLayout Prefab_ArtistFlowWindow;
+
+
+    public AR2DLayout AR2DPanel;
 }

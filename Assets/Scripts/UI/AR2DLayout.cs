@@ -11,6 +11,7 @@ public class AR2DLayout : MonoBehaviour
     public Button BTNExit;
     public Button BTNShot;
     public ScriptsCamera scriptsCamera;
+    public Transform ArtworkPool;
 
     SaveScreen saveScreen;
     
@@ -27,9 +28,20 @@ public class AR2DLayout : MonoBehaviour
         saveScreen = GetComponent<SaveScreen>();
     }
 
+    public void SetupArtwork(GameObject obj){
+        foreach (Transform item in ArtworkPool)
+        {
+            Destroy(item.gameObject);
+        }
+
+        if(obj)
+            Instantiate(obj, ArtworkPool);
+    }
+
     void DoExit(){
         gameObject.SetActive(false);
         scriptsCamera.StopWebcam();
+        
     }
 
     void DoShot(){

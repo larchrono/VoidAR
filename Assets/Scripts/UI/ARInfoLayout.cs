@@ -97,7 +97,8 @@ public class ARInfoLayout : PanelExtendtion
     }
 
     void OpenAR2D(){
-        AR2DLayout.instance.gameObject.SetActive(true);
+        UITabCenter.instance.AR2DPanel.SetupArtwork(currentData.UseModel);
+        UITabCenter.instance.AR2DPanel.gameObject.SetActive(true);
     }
 
     void CloseInfo(){
