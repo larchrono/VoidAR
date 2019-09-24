@@ -19,6 +19,9 @@ public class RequirePermissions : MonoBehaviour
             if (!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.FineLocation)) {
                 UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.FineLocation);
             }
+            if(!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.ExternalStorageWrite)){
+                UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.ExternalStorageWrite);
+            }
         #endif
     }
 }

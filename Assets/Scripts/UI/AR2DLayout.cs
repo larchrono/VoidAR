@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(SaveScreen))]
 public class AR2DLayout : MonoBehaviour
 {
     public static AR2DLayout instance;
 
     public Button BTNExit;
     public Button BTNShot;
+    public ScriptsCamera scriptsCamera;
+
+    SaveScreen saveScreen;
+    
     
     void Awake(){
         instance = this;
@@ -19,21 +24,15 @@ public class AR2DLayout : MonoBehaviour
         BTNExit.onClick.AddListener(DoExit);
         BTNShot.onClick.AddListener(DoShot);
 
-        gameObject.SetActive(false);
+        saveScreen = GetComponent<SaveScreen>();
     }
 
     void DoExit(){
         gameObject.SetActive(false);
-
+        scriptsCamera.StopWebcam();
     }
 
     void DoShot(){
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        saveScreen.OnClickScreenCaptureButton();
     }
 }

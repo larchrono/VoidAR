@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-public class ScreenCapture : ScreenCaptureBase
+public class VoidScreenCapture : ScreenCaptureBase
 {
     /*
     void OnGUI() {
