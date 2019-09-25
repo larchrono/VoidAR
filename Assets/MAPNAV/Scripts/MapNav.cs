@@ -1207,7 +1207,11 @@ public class MapNav : MonoBehaviour
 				continue;
 			}
 
-			dragToPan = true;
+			if(UITabCenter.instance.DebugPanel.gameObject.activeSelf){
+				dragToPan = false;
+			} else {
+				dragToPan = true;
+			}
 
 			if(ready && mapping){
 				layout.TextUpdating.gameObject.SetActive(true);

@@ -9,6 +9,7 @@ public class MapController : MonoBehaviour
     public static MapController instance;
     public static Action<float> CollisionRangeHandler;
 
+    public Text CollisionText;
     public Slider CollisionRange;
 
     void Awake(){
@@ -19,9 +20,15 @@ public class MapController : MonoBehaviour
     {
         if(CollisionRange)
             CollisionRange.onValueChanged.AddListener(OnCollisionRangeChange);
+        
+        float val = PlayerPrefs.GetFloat("Collision", 10);
+
+        if(CollisionText)
+            CollisionText.text = val.ToString("#.###");
     }
 
     void OnCollisionRangeChange(float src){
         CollisionRangeHandler?.Invoke(src);
+        PlayerPrefs.SetFloat("Collision", src);
     }
 }
