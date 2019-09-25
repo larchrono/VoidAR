@@ -38,6 +38,16 @@ public class AR2DLayout : MonoBehaviour
             Instantiate(obj, ArtworkPool);
     }
 
+    public void SetupStreetPhoto(GameObject obj){
+        foreach (Transform item in ArtworkPool)
+        {
+            Destroy(item.gameObject);
+        }
+
+        if(obj)
+            Instantiate(obj, ArtworkPool);
+    }
+
     void DoExit(){
         gameObject.SetActive(false);
         scriptsCamera.StopWebcam();

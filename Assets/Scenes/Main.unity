@@ -2196,6 +2196,12 @@ PrefabInstance:
       propertyPath: PhotoSource
       value: "\u5716\u7247\u4F86\u6E90\uFF1A\u8B1D\u6A39\u7C50"
       objectReference: {fileID: 0}
+    - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
+        type: 3}
+      propertyPath: UseMask
+      value: 
+      objectReference: {fileID: 7536131256670279827, guid: 1711661aa7ca49c4e8cbe3e3e3b65ebe,
+        type: 3}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
@@ -2827,6 +2833,12 @@ PrefabInstance:
       propertyPath: PhotoAge
       value: "\u62CD\u651D\u5E74\u4EE3\uFF1A\u6C11\u570B50\u5E74\u4EE3\u5DE6\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
+        type: 3}
+      propertyPath: UseMask
+      value: 
+      objectReference: {fileID: 2629774274621471059, guid: 9c36607722b149a43a768a774bbca5a8,
+        type: 3}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
@@ -5859,6 +5871,12 @@ PrefabInstance:
       propertyPath: PhotoSource
       value: "\u5716\u7247\u4F86\u6E90\uFF1A\u5289\u662D\u8F1D"
       objectReference: {fileID: 0}
+    - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
+        type: 3}
+      propertyPath: UseMask
+      value: 
+      objectReference: {fileID: 5307047385841327782, guid: 6c89416f5a5334c4587274cf83a3726a,
+        type: 3}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
@@ -11784,7 +11802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173387739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 5}
+  m_LocalPosition: {x: 0, y: -0.5, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 723309600}
@@ -12824,6 +12842,12 @@ PrefabInstance:
       propertyPath: PhotoAge
       value: "\u62CD\u651D\u5E74\u4EE3\uFF1A\u6C11\u570B50\u5E74\u4EE3\u5DE6\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
+        type: 3}
+      propertyPath: UseMask
+      value: 
+      objectReference: {fileID: 8215717816267774842, guid: 1fe0af952fddde74c8c0cf6ef69a35f8,
+        type: 3}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
@@ -21626,6 +21650,12 @@ PrefabInstance:
       propertyPath: POI_Name
       value: "\u6377\u904B\u528D\u5357\u8DEF\u7AD9"
       objectReference: {fileID: 0}
+    - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
+        type: 3}
+      propertyPath: UseMask
+      value: 
+      objectReference: {fileID: 6824154592143712469, guid: 9bb73db1a9d55ea4c8357e5cdd66a883,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f8d0ed12d40e4cb12282bacdb54d4, type: 3}
 --- !u!114 &5023707027409823862

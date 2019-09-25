@@ -13,6 +13,8 @@ public class MoveController : MonoBehaviour
     private Vector2 _startTouchPosition;
     private Vector2 _touchOffset;
 
+    private bool isPhoto = false;
+
     private void Start() {
         ControllerCamera = GetComponent<Camera>();
     }
@@ -34,6 +36,8 @@ public class MoveController : MonoBehaviour
                 _startTouchPosition = Input.mousePosition;
 
             _touchOffset = ControllerCamera.WorldToScreenPoint(_startObjectPosition);
+
+            isPhoto = _activeObject.GetComponent<IsPhoto>() ? true : false;
         }
     }
 
@@ -57,7 +61,8 @@ public class MoveController : MonoBehaviour
 
                 _activeObject.position = Vector3.Lerp(_activeObject.position, newPos, 0.25f);
 
-                _activeObject.Rotate(0, RotateSpeed * Time.deltaTime, 0);
+                if(isPhoto == false)
+                    _activeObject.Rotate(0, RotateSpeed * Time.deltaTime, 0);
             }
 
         }
@@ -82,7 +87,8 @@ public class MoveController : MonoBehaviour
                 _activeObject.position = Vector3.Lerp(_activeObject.position, newPos, 0.25f);
 
                 if(Input.touchCount == 1)
-                    _activeObject.Rotate(0, RotateSpeed * Time.deltaTime, 0);
+                    if(isPhoto == false)
+                        _activeObject.Rotate(0, RotateSpeed * Time.deltaTime, 0);
             }
 
             /* If we are dragging an augmentation, raycast against the ground plane to find how the augmentation should be moved. 
