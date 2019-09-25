@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BasePoint: {fileID: 1304784363}
   MinScale: 0.25
-  MaxScale: 2
+  MaxScale: 2.5
 --- !u!114 &1835797839
 MonoBehaviour:
   m_ObjectHideFlags: 0

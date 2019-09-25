@@ -14,6 +14,8 @@ public class ScaleController : MonoBehaviour
     private Vector3 _touch2StartGroundPosition;
     private Vector3 _startObjectScale;
 
+    private bool isPhoto = false;
+
     private void Start () {
         ControllerCamera = GetComponent<Camera>();
     }
@@ -35,6 +37,8 @@ public class ScaleController : MonoBehaviour
     private void SetTouchObject(Transform newObject) {
         if(newObject.gameObject.tag == "ARObject") {
             _activeObject = newObject;
+
+            isPhoto = _activeObject.GetComponent<IsPhoto>() ? true : false;
         }
     }
 
@@ -83,8 +87,9 @@ public class ScaleController : MonoBehaviour
                     _activeObject.localScale = new Vector3(MinScale, MinScale, MinScale);
                 }
 
-                if (_activeObject.localScale.x > MaxScale) {
-                    _activeObject.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
+                float newMaxScale = isPhoto ? MaxScale * 3 : MaxScale;
+                if (_activeObject.localScale.x > newMaxScale) {
+                    _activeObject.localScale = new Vector3(newMaxScale, newMaxScale, newMaxScale);
                 }
             }
         } else {
