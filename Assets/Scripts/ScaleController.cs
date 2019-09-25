@@ -3,7 +3,6 @@
 /* Script that controls scaling the furniture augmentations. */
 public class ScaleController : MonoBehaviour
 {
-    public Transform BasePoint;
     private Camera ControllerCamera;
     public float MinScale = 0.1f;
     public float MaxScale = 0.5f;

@@ -105,12 +105,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c3785e8ab2f884684fd10adf06fe07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerType: 0
+  markerType: 1
   shapeMatchAccuracy: 5
   is_use_cloud: 0
   accessKey: 
   secretKey: 
-  appKey: 
+  appKey: B0DjmDYQMQuGg9Wnk7PlkvxawHgcKaOWyQyqFOMNWdMo8hEVuvTWnJOc70cNtmHc
   privateCloud: 0
   cloudURL: 
   tracking: 0

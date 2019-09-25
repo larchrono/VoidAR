@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerEvent : MonoBehaviour
 {
     public static PlayerEvent instance;
+    public Transform FollowNavegater;
 
     GetDistance distanceTool;
 
@@ -27,7 +28,7 @@ public class PlayerEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        transform.position = FollowNavegater.position;
     }
 
     public void SetTargetGoal(Transform target){
@@ -51,7 +52,7 @@ public class PlayerEvent : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "POI")
+        Debug.Log("Entering~ ");
         {
             arrivePOI = other.GetComponent<POIData>();
             other.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;

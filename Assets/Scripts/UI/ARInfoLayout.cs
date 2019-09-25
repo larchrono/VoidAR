@@ -41,6 +41,7 @@ public class ARInfoLayout : PanelExtendtion
         Go2D.onClick.AddListener(Enable2DGo);
 
         Open2D.onClick.AddListener(OpenAR2D);
+        Open3D.onClick.AddListener(OpenAR3D);
     }
 
     void Update(){
@@ -103,6 +104,15 @@ public class ARInfoLayout : PanelExtendtion
             UITabCenter.instance.AR2DPanel.SetupStreetPhoto(currentData.UseMask);
         }
         UITabCenter.instance.AR2DPanel.gameObject.SetActive(true);
+    }
+
+    void OpenAR3D(){
+        if(currentData.UseModel != null) {
+            UITabCenter.instance.AR3DPanel.SetupArtwork(currentData.UseModel);
+        } else if (currentData.UseMask != null) {
+            UITabCenter.instance.AR3DPanel.SetupStreetPhoto(currentData.UseMask);
+        }
+        UITabCenter.instance.AR3DPanel.gameObject.SetActive(true);
     }
 
     void CloseInfo(){

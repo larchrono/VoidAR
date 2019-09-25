@@ -947,7 +947,7 @@ public class MapNav : MonoBehaviour
 	}
 
 	//SAMPLE USER INTERFACE. MODIFY OR EXTEND IF NECESSARY =============================================================
-	void OnGUI_Bak () {
+	void OnGUI_BAK () {
 		GUI.skin.box.alignment = TextAnchor.MiddleCenter;
 		GUI.skin.box.font = Resources.Load("Neuropol") as Font;
 		GUI.skin.box.normal.background = Resources.Load("grey") as Texture2D;

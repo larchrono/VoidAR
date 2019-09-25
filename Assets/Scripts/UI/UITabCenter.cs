@@ -29,4 +29,5 @@ public class UITabCenter : MonoBehaviour
 
     public PanelDebug DebugPanel;
     public AR2DLayout AR2DPanel;
+    public AR3DLayout AR3DPanel;
 }
