@@ -25,4 +25,8 @@ public class PageBehaviour : PanelExtendtion
     public void DoPageClose(){
         OnPageClose?.Invoke();
     }
+
+    public bool IsInActive(){
+        return canvas.interactable;
+    }
 }

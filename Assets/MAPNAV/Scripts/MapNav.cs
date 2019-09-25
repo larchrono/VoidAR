@@ -209,6 +209,8 @@ public class MapNav : MonoBehaviour
 
 	IEnumerator Start () {
 
+		StartExtention();
+
 		//Initializing variables
 		gpsFix=false;
 		rect = new Rect (screenX/10, screenY/10, 8*screenX/10, 8*screenY/10);
@@ -945,7 +947,7 @@ public class MapNav : MonoBehaviour
 	}
 
 	//SAMPLE USER INTERFACE. MODIFY OR EXTEND IF NECESSARY =============================================================
-	void OnGUI () {
+	void OnGUI_Bak () {
 		GUI.skin.box.alignment = TextAnchor.MiddleCenter;
 		GUI.skin.box.font = Resources.Load("Neuropol") as Font;
 		GUI.skin.box.normal.background = Resources.Load("grey") as Texture2D;
@@ -1180,5 +1182,113 @@ public class MapNav : MonoBehaviour
 
 	void print(string msg){
 		DebugMsg.AddMessage(msg);
+	}
+
+	private PanelPageARLayout layout = null;
+	private float UpdateingRate = 0.33f;
+
+	void StartExtention(){
+		layout = UITabCenter.instance.PanelAR.GetComponent<PanelPageARLayout>();
+		layout.OnPressNavLocate += PressLocate;
+		layout.OnPressNavTop += PressTileTop;
+		layout.OnPressNavBottom += PressTileBottom;
+		layout.OnPressNavLeft += PressTileLeft;
+		layout.OnPressNavRight += PressTileRight;
+
+		StartCoroutine(UpdateControlUIs());
+	}
+
+	IEnumerator UpdateControlUIs(){
+		while(true){
+
+			if(UITabCenter.instance.PanelAR.IsInActive() == false){
+				dragToPan = false;
+				yield return new WaitForSeconds(UpdateingRate);
+				continue;
+			}
+
+			dragToPan = true;
+
+			if(ready && mapping){
+				layout.TextUpdating.gameObject.SetActive(true);
+				LockNavs();
+			} else {
+				layout.TextUpdating.gameObject.SetActive(false);
+				ReleaseNavs();
+			}
+
+			if (ready && !mapping && !centered){	
+				layout.NavLocate.gameObject.SetActive(true);
+			} else {
+				layout.NavLocate.gameObject.SetActive(false);
+			}
+
+			if(ready && !mapping){
+
+				if(tileTop){
+					layout.NavTop.gameObject.SetActive(true);
+				} else
+					layout.NavTop.gameObject.SetActive(false);
+
+				if(tileRight){
+					layout.NavRight.gameObject.SetActive(true);
+				} else
+					layout.NavRight.gameObject.SetActive(false);
+
+				if(tileBottom){
+					layout.NavBottom.gameObject.SetActive(true);
+				} else
+					layout.NavBottom.gameObject.SetActive(false);
+
+				if(tileLeft){
+					layout.NavLeft.gameObject.SetActive(true);
+				} else
+					layout.NavLeft.gameObject.SetActive(false);
+			}
+
+			yield return new WaitForSeconds(UpdateingRate);
+		}
+	}
+
+	void LockNavs(){
+		layout.NavLocate.interactable = false;
+		layout.NavTop.interactable = false;
+		layout.NavRight.interactable = false;
+		layout.NavBottom.interactable = false;
+		layout.NavLeft.interactable = false;
+	}
+
+	void ReleaseNavs(){
+		layout.NavLocate.interactable = true;
+		layout.NavTop.interactable = true;
+		layout.NavRight.interactable = true;
+		layout.NavBottom.interactable = true;
+		layout.NavLeft.interactable = true;
+	}
+
+	void PressLocate(){
+		centering = true;
+		StartCoroutine(MapPosition());
+		StartCoroutine(ReScale());
+	}
+	void PressTileTop(){
+		borderTile = 1;
+		StartCoroutine(MapPosition());
+		StartCoroutine(ReScale());
+	}
+	void PressTileRight(){
+		borderTile = 2;
+		StartCoroutine(MapPosition());
+		StartCoroutine(ReScale());
+	}
+	void PressTileBottom(){
+		borderTile = 3;
+		StartCoroutine(MapPosition());
+		StartCoroutine(ReScale());
+	}
+	void PressTileLeft(){
+		borderTile = 4;
+		StartCoroutine(MapPosition());
+		StartCoroutine(ReScale());
 	}
 }
