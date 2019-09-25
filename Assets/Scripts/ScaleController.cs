@@ -47,7 +47,7 @@ public class ScaleController : MonoBehaviour
             Touch touch1 = Input.GetTouch(0);
             Touch touch2 = Input.GetTouch(1);
             Transform hitTransform;
-            RaycastHit hit;
+            RaycastHit[] hit;
 
             /* If we're currently not scaling any augmentation, do a raycast for each touch position to find one. */
             if (_activeObject == null) {
@@ -55,10 +55,18 @@ public class ScaleController : MonoBehaviour
                  * use that augmentation for scaling.
                  */
 
+                /*
                 if (Physics.Raycast(ControllerCamera.ScreenPointToRay(touch1.position), out hit)) {
                     SetTouchObject(hit.transform);
                 } else if (Physics.Raycast(ControllerCamera.ScreenPointToRay(touch2.position), out hit)){
                     SetTouchObject(hit.transform);
+                }
+                */
+
+                hit = Physics.RaycastAll(ControllerCamera.ScreenPointToRay(touch1.position));
+                foreach (var item in hit)
+                {
+                    SetTouchObject(item.transform);
                 }
 
                 /*

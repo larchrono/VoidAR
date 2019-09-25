@@ -48,6 +48,9 @@ public class AR2DLayout : MonoBehaviour
             Instantiate(obj, ArtworkPool);
     }
 
+    public void StartAR2D(){
+        scriptsCamera.StartWebcam();
+    }
     void DoExit(){
         gameObject.SetActive(false);
         scriptsCamera.StopWebcam();

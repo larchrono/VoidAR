@@ -46,11 +46,19 @@ public class MoveController : MonoBehaviour
         #if UNITY_EDITOR
         if(Input.GetMouseButton(0)){
             Vector2 mousePosition = Input.mousePosition;
-            RaycastHit hit;
+            RaycastHit[] hit;
 
             if (_activeObject == null) {
+                /*
                 if(Physics.Raycast(ControllerCamera.ScreenPointToRay(mousePosition), out hit)) {
                     SetMoveObject(hit.transform);
+                }
+                */
+
+                hit = Physics.RaycastAll(ControllerCamera.ScreenPointToRay(mousePosition));
+                foreach (var item in hit)
+                {
+                    SetMoveObject(item.transform);
                 }
             }
 
@@ -70,12 +78,20 @@ public class MoveController : MonoBehaviour
 
         if (Input.touchCount > 0) {
             Touch touch = Input.GetTouch(0);
-            RaycastHit hit;
+            RaycastHit[] hit;
 
             /* If we're currently not dragging any augmentation, do a raycast to find one in the scene. */
             if (_activeObject == null) {
-                if (Physics.Raycast(ControllerCamera.ScreenPointToRay(touch.position), out hit)) {
+                /*
+                if (Physics.RaycastAll(ControllerCamera.ScreenPointToRay(touch.position), out hit)) {
                     SetMoveObject(hit.transform);
+                }
+                */
+
+                hit = Physics.RaycastAll(ControllerCamera.ScreenPointToRay(touch.position));
+                foreach (var item in hit)
+                {
+                    SetMoveObject(item.transform);
                 }
             }
 

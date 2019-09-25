@@ -104,6 +104,7 @@ public class ARInfoLayout : PanelExtendtion
             UITabCenter.instance.AR2DPanel.SetupStreetPhoto(currentData.UseMask);
         }
         UITabCenter.instance.AR2DPanel.gameObject.SetActive(true);
+        UITabCenter.instance.AR2DPanel.StartAR2D();
     }
 
     void OpenAR3D(){

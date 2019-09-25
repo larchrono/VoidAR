@@ -89,7 +89,7 @@ public class ScriptsCamera : MonoBehaviour
 
     void Start()
     {
-        StartWebcam();
+        //StartWebcam();
     }
 
     void Update()
