@@ -20,6 +20,18 @@ public class AR3DLayout : MonoBehaviour
     void Awake(){
         instance = this;
     }
+
+    void OnEnable() {
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+    }
+
+    void OnDisable() {
+        Screen.autorotateToLandscapeLeft = false;
+        Screen.autorotateToLandscapeRight = false;
+        Screen.orientation = ScreenOrientation.Portrait;
+    }
+    
     void Start()
     {
         BTNExit.onClick.AddListener(DoExit);

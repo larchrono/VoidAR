@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1655704818163780153}
   - component: {fileID: 1655704818163780152}
   m_Layer: 0
-  m_Name: Artwork4
+  m_Name: "10. \u9EC3\u654F\u4FCA"
   m_TagString: ARObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

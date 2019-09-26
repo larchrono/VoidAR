@@ -65,7 +65,8 @@ public class MoveController : MonoBehaviour
             if (_activeObject != null) {
                 Vector2 screenPosForRay = (mousePosition - _startTouchPosition) + _touchOffset;
 
-                Vector3 newPos = ControllerCamera.ScreenToWorldPoint(new Vector3(screenPosForRay.x, screenPosForRay.y, BasePoint.position.z));
+                Vector3 newPos = ControllerCamera.ScreenToWorldPoint(new Vector3(screenPosForRay.x, screenPosForRay.y, BasePoint.localPosition.z));
+                newPos = new Vector3(newPos.x, newPos.y , 0);
 
                 _activeObject.position = Vector3.Lerp(_activeObject.position, newPos, 0.25f);
 
@@ -98,7 +99,8 @@ public class MoveController : MonoBehaviour
             if (_activeObject != null) {
                 Vector2 screenPosForRay = (touch.position - _startTouchPosition) + _touchOffset;
 
-                Vector3 newPos = ControllerCamera.ScreenToWorldPoint(new Vector3(screenPosForRay.x, screenPosForRay.y, BasePoint.position.z));
+                Vector3 newPos = ControllerCamera.ScreenToWorldPoint(new Vector3(screenPosForRay.x, screenPosForRay.y, BasePoint.localPosition.z));
+                newPos = new Vector3(newPos.x, newPos.y , 0);
 
                 _activeObject.position = Vector3.Lerp(_activeObject.position, newPos, 0.25f);
 

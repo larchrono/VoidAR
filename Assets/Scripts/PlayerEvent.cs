@@ -23,6 +23,13 @@ public class PlayerEvent : MonoBehaviour
     {
         distanceTool = GetComponent<GetDistance>();
         StartCoroutine(DoSendDistance(distanceTool.updateRate));
+
+        StartCoroutine(DelayOpenCollider());
+    }
+
+    IEnumerator DelayOpenCollider(){
+        yield return new WaitForSeconds(1.0f);
+        GetComponent<BoxCollider>().enabled = true;
     }
 
     // Update is called once per frame
@@ -53,11 +60,18 @@ public class PlayerEvent : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Entering~ ");
+        if (other.tag == "POI")
         {
             arrivePOI = other.GetComponent<POIData>();
-            other.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
             ARInfoLayout.instance.PanelNaving.FinishedNaving(arrivePOI, GetTargetDistance(arrivePOI.transform));
-            
+
+
+            if(other.gameObject.transform.childCount == 0)
+                return;
+
+            Transform child = other.gameObject.transform.GetChild(0);
+            if(child != null)
+                child.GetComponent<Renderer>().material.color = Color.green;
         }
     }
 
@@ -66,7 +80,13 @@ public class PlayerEvent : MonoBehaviour
         if (other.tag == "POI")
         {
             arrivePOI = null;
-            other.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.white;
+
+            if(other.gameObject.transform.childCount == 0)
+                return;
+
+            Transform child = other.gameObject.transform.GetChild(0);
+            if(child != null)
+                child.GetComponent<Renderer>().material.color = Color.white;
             
         }
     }

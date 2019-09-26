@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7721978520746856556}
   - component: {fileID: 7721978520746856851}
   m_Layer: 0
-  m_Name: Artwork3
+  m_Name: "1. \u5F90\u6C38\u65ED"
   m_TagString: ARObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_RootOrder
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2f2d2fff19b960e4da722e18726923a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
