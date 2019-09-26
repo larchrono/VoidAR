@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6351247009428677991}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 6351247010572901579}
   m_RootOrder: 0
@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 6351247009763122923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 6351247010572901579}
   m_RootOrder: 1
@@ -230,7 +230,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6351247010572901572
 MonoBehaviour:
@@ -246,27 +246,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Icon: {fileID: 6351247009428677985}
   GizmoColliRange: {fileID: 6351247009763122922}
-  CanStartAR: 0
   typeOfPOI: 0
   POI_Name: "\u4EC1\u5BF6\u5927\u6A13-\u59DC\u540D\u99FF\u3001\u5927\u6A4B\u982D\u85DD\u8853\u5DE5\u4F5C\u5BA4/
     \u6587\u5B78\u5BB6:\u8FFD\u5947"
   spriteLoc: {fileID: 0}
   ArtistName: 
   ArtworkName: 
+  ArtMaterial: 
   ArtSize: 
   ArtAge: 
-  ArtMaterial: 
   ArtPhoto: {fileID: 0}
   ArtContent: 
   ArtCopyright: 
   ArtistPhoto: {fileID: 0}
   ArtistContent: 
   ArtistCopyright: 
+  UseModel: {fileID: 0}
   ViewpointName: 
   ViewpointContent: 
   ViewpointPhoto: {fileID: 0}
   PhotoAge: 
   PhotoSource: 
+  UseMask: {fileID: 0}
   csvFile: {fileID: 0}
   csvIndex: 1
 --- !u!114 &6351247010572901573

@@ -65,6 +65,9 @@ public class PlayerEvent : MonoBehaviour
             arrivePOI = other.GetComponent<POIData>();
             ARInfoLayout.instance.PanelNaving.FinishedNaving(arrivePOI, GetTargetDistance(arrivePOI.transform));
 
+            //Shake Device
+            Handheld.Vibrate();
+
 
             if(other.gameObject.transform.childCount == 0)
                 return;

@@ -741,12 +741,12 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.07951
+      value: 25.07963
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.56851
+      value: 121.56863
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -1076,7 +1076,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u656C\u696D\u4E09\u8DEF\u4E8C-\u5ED6\u662D\u8C6A"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u656C\u696D\u4E09\u8DEF\u4E8C"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -1086,12 +1086,28 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u5ED6\u662D\u8C6A"
+      value: "\u5ED6\u662D\u8C6A"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u656C\u696D\u4E09\u8DEF \u4E8C\n\u85DD\u8853\u5BB6\uFF1A\u5ED6\u662D\u8C6A"
+      value: "\u95DC\u65BC\u85DD\u8853\u5BB6\uFF1A\r\n\u4F5C\u54C1\u4E3B\u8981\u4EE5\u7D5E\u788E\u7684\u5831\u7D19\u7D19\u6F3F\u4EFF\u64EC\u53F0\u7063\u7684\u4EBA\u70BA\u5730\u666F\u98A8\u8C8C\uFF0C\u5C55\u73FE\u85DD\u8853\u5BB6\u5C0D\u4EBA\u70BA\u958B\u767C\u65BC\u81EA\u7136\u8207\u74B0\u5883\u8B70\u984C\u4E0A\u7684\u53CD\u601D\u3002\u73FE\u5728\u64C5\u9577\u4F7F\u7528\u66FF\u4EE3\u6750\u6599\u4F86\u91CD\u5851\u65E5\u5E38\u751F\u6D3B\u4E2D\u51FA\u73FE\u7684\u7269\u9AD4\uFF0C\u4E26\u5C0D\u73FE\u5728\u5145\u6EFF\u5DE5\u696D\u7522\u54C1\u7684\u4E16\u4EE3\u505A\u51FA\u53CD\u61C9\u3002\r\n\r\n\u5275\u4F5C\u7406\u5FF5:\r\n\u516C\u8ECA\u7AD9\u5728\u65E5\u5E38\u63D0\u4F9B\u4E86\u5F88\u591A\u9014\u5F91\uFF0C\u5305\u62EC\u5F80\u8FD4\u4F4F\u5BB6\u3001\u4E0A\u4E0B\u73ED\u3001\u65C5\u904A\u3001\u6216\u5176\u4ED6\u65E5\u5E38\u6D3B\u52D5\uFF0C\u4F46\u99D0\u8DB3\u7684\u60C5\u5883\u901A\u5E38\u53EA\u662F\u7B49\u5F85\u5373\u5C07\u5230\u7AD9\u7684\u516C\u8ECA\uFF0C\u76EE\u5149\u6975\u5C11\u6295\u6CE8\u5728\u516C\u8ECA\u7AD9\u88E1\u73ED\u6B21\u8CC7\u8A0A\u8207\u5546\u696D\u5EE3\u544A\u4EE5\u5916\u7684\u5730\u65B9\u3002\u516C\u8ECA\u7AD9\u50CF\u662F\u5728\u958B\u95CA\u7A7A\u5730\u4E0A\u7684\u5C0F\u7A81\u8D77\u7269\uFF0C\u7368\u7ACB\u5728\u8DEF\u908A\uFF0C\u9762\u5C0D\u7DCA\u9130\u7684\u9AD8\u6A13\u6642\uFF0C\u6709\u4E00\u7A2E\u5728\u89C0\u770B\u77EE\u78DA\u623F\u7684\u65E2\u8996\u611F\u3002\u5C07\u78DA\u982D\u3001\u82B1\u7A97\u8207\u9435\u76AE\u7B49\u65E9\u671F\u4F4F\u5B85\u5143\u7D20\u6CE8\u5165\u516C\u8ECA\u7AD9\uFF0C\u7576\u591C\u9593\u6642\u7A97\u5167\u4EAE\u8D77\u6696\u5149\uFF0C\u5F77\u5F7F\u6709\u4EBA\u5728\u88E1\u982D\u6D3B\u52D5\uFF0C\u5617\u8A66\u53CD\u8F49\u8A2D\u65BD\u5E36\u7D66\u8EAB\u9AD4\u7684\u6642\u9593\u611F\uFF0C\u8B93\u89C0\u773E\u5728\u89C0\u770B\u7AD9\u53F0\u6642\u6709\u66F4\u591A\u95DC\u65BC\u751F\u6D3B\u7684\u7D93\u9A57\u9023\u7D50\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 05f40cd9febc2f34fb9206926c9d0bce,
+        type: 3}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtworkName
+      value: "\u78DA\u623F"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtMaterial
+      value: "\u7D19\u677F\u3001\u58D3\u514B\u529B\u984F\u6599\u3001\u7D19\u6F3F\u3001\u8272\u7D19\u3001LED"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -2480,12 +2496,12 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.08189
+      value: 25.08183
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.56936
+      value: 121.56943
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -3018,7 +3034,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -3048,8 +3064,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u5C0A\u5F69\u85DD\u8853\u4E2D\u5FC3\r\nhttp://www.lianggallery.com/\r"
+      value: "\u5730\u5740\uFF1A \u53F0\u5317\u5E02\u5167\u6E56\u5340\u745E\u5149\u8DEF366\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 11:00 - 18:00\r\n\u96FB\u8A71\uFF1A 02 2797 1100\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 527741402ec2d444b83343903d91875f,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -3500,7 +3523,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -3708,7 +3731,7 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.55633
+      value: 121.55624
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -7002,7 +7025,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u656C\u696D\u4E09\u8DEF\u4E00/\u6587\u5B78\u5BB6:\u5433\u66C9\u6A02"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u656C\u696D\u4E09\u8DEF\u4E00"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -7012,12 +7035,12 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u5433\u66C9\u6A02"
+      value: "\u5433\u66C9\u6A02"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u656C\u696D\u4E09\u8DEF \u4E00\n\u6587\u5B78\u5BB6\uFF1A\u5433\u66C9\u6A02"
+      value: "\u95DC\u65BC\u6587\u5B78\u5BB6\uFF1A\r\n\u8457\u6709\u300A\u4F60\u7684\u5B69\u5B50\u4E0D\u662F\u4F60\u7684\u5B69\u5B50\u300B\u3001\u300A\u4E0A\u6D41\u5152\u7AE5\u300B\uFF0C\u6563\u6587\u96C6\u300A\u53EF\u662F\u6211\u504F\u504F\u4E0D\u559C\u6B61\u300B\u3002\u6587\u7AE0\u6563\u898B\u65BC\u535A\u5BA2\u4F86OKAPI\u3001Readmoo\u8B80\u58A8\u96FB\u5B50\u66F8\u3001\u300A\u81EA\u7531\u6642\u5831\u300B\u7B49\u3002\r"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -7449,7 +7472,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u5927\u76F4\u7F8E\u5824\u82B1\u5712\u4E09/\u6587\u5B78\u5BB6:\u9673\u53C8\u6D25"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u5927\u76F4\u7F8E\u5824\u82B1\u5712\u4E09(\u5357)"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -7459,13 +7482,19 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u9673\u53C8\u6D25"
+      value: "\u9673\u53C8\u6D25"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u5927\u76F4\u7F8E\u5824\u82B1\u5712\u4E09\uFF08\u5DE6\uFF09\n\u6587\u5B78\u5BB6\uFF1A\u9673\u53C8\u6D25"
+      value: "\u95DC\u65BC\u6587\u5B78\u5BB6\uFF1A\r\n1986\u5E74\u751F\uFF0C\u53F0\u7063\u5927\u5B78\u6232\u5287\u7CFB\u5287\u672C\u5275\u4F5C\u7D44\u78A9\u58EB\u3002\u53F0\u7063\u7576\u4EE3\u5E74\u8F15\u5BEB\u4F5C\u8005\uFF0C\u66FE\u4EE5\u9577\u7BC7\u5C0F\u8AAA\u300A\u5C11\u5973\u5FFD\u5FC5\u70C8\u300B\u52FE\u7E6A\u65B0\u4E16\u4EE3\u6587\u5316\u6C1B\u570D\uFF0C\u4EE5\u6563\u6587\u300A\u6E96\u53F0\u5317\u4EBA\u300B\u63A2\u89F8\u500B\u4EBA\u8EAB\u4E16\u8207\u65CF\u7FA4\u5883\u6CC1\uFF0C\u6558\u4E8B\u660E\u5FEB\u7280\u654F\u3002\u300A\u8DE8\u754C\u901A\u8A0A\u300B\u6311\u6230\u6B7B\u4EA1\u8207\u9577\u7167\u8B70\u984C\uFF0C\u4EE5\u7DB2\u8DEF\u70BA\u5A92\u4ECB\uFF0C\u9B06\u52D5\u6A21\u7CCA\u865B\u69CB\u8207\u73FE\u5BE6\u7684\u754C\u7DDA\u3002\u66FE\u7372\u6642\u5831\u6587\u5B78\u734E\u3001\u9999\u6E2F\u9752\u5E74\u6587\u5B78\u734E\u3001\u6559\u80B2\u90E8\u6587\u85DD\u5275\u4F5C\u5287\u672C\u734E\uFF0C\u5165\u570D\u53F0\u7063\u6587\u5B78\u734E\u9577\u7BC7\u5C0F\u8AAA\u91D1\u5178\u734E\u7B49\u3002\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: f888f09a5efb2354fa090f1f260acf3e,
+        type: 3}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: lat
@@ -7770,7 +7799,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -300}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6388346248885844942}
   - {fileID: 242902481}
   - {fileID: 1115070913}
   - {fileID: 1951836226}
@@ -8442,7 +8470,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u6055\u5FB7\u5BB6\u5546-\u7CD6\u679C\u9CE5"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u6055\u5FB7\u5BB6\u5546\u7AD9"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -8452,13 +8480,28 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u7CD6\u679C\u9CE5"
+      value: "\u7CD6\u679C\u9CE5 Candy Bird"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u6055\u5FB7\u5BB6\u5546\n\u85DD\u8853\u5BB6\uFF1A\u7CD6\u679C\u9CE5
-        Candy Bird"
+      value: "\u95DC\u65BC\u85DD\u8853\u5BB6\uFF1A\r\n\u7CD6\u679C\u9CE5\u7684\u85DD\u8853\u7531\u8857\u982D\u5857\u9D09\u767C\u8DE1\uFF0C\u4F5C\u54C1\u4E3B\u984C\u9762\u5411\u90FD\u5E02\u793E\u6703\u4EE5\u53CA\u908A\u7DE3\u6027\u30022010\u5E74\u958B\u59CB\u4F7F\u7528\u5857\u9D09\u53BB\u50B3\u905E\u88AB\u4E3B\u6D41\u5FFD\u7565\u7684\u89C0\u9EDE\uFF0C\u4EE5\u53CA\u53C3\u8207\u6297\u722D\u7684\u89C0\u5BDF\uFF0C\u4F01\u5716\u5728\u90FD\u5E02\u7684\u7E2B\u9699\u4E2D\u5BE6\u8E10\u70BA\u793E\u6703\u800C\u85DD\u8853\u7684\u5448\u73FE\uFF0C\u878D\u5408\u74B0\u5883\u7684\u65E2\u6709\u7269\u4EF6\u548C\u7121\u5F62\u7684\u6B77\u53F2\u8108\u7D61\u662F\u4ED6\u7684\u4E3B\u8981\u624B\u6CD5\u3002\u8FD1\u5E7E\u5E74\uFF0C\u958B\u59CB\u8207\u7D20\u4EBA\u6587\u5B78\u7684\u8DE8\u754C\u5408\u4F5C\uFF0C\u5617\u8A66\u5275\u4F5C\u904E\u7A0B\u4E2D\u7684\u4E3B\u9AD4\u8B8A\u63DB\u548C\u878D\u5408\uFF0C\u8A66\u5716\u89E3\u69CB\u50B3\u7D71\u5857\u9D09\u8207\u8857\u9053\u58C1\u756B\u7684\u55AE\u4E00\u6027\uFF0C\u4E26\u8B93\u89C0\u773E\u7559\u610F\u4ED6\u8005\u7684\u751F\u547D\u75D5\u8DE1\u4E26\u7522\u751F\u8207\u81EA\u8EAB\u751F\u6D3B\u7D93\u9A57\u7684\u5C0D\u8A71\u3002\r\n\r\n\u5275\u4F5C\u7406\u5FF5:\r\n\u9664\u4E86\u95DC\u65BC\u90FD\u5E02\u751F\u6D3B\u7684\u65E5\u5E38\uFF0C\u6211\u4E5F\u6703\u4EE5\u6642\u4E8B\u65B0\u805E\u70BA\u5275\u4F5C\u7684\u51FA\u767C\u9EDE\uFF0C\u5617\u8A66\u900F\u904E\u8996\u89BA\u85DD\u8853\u7684\u8A6E\u91CB\uFF0C\u53BB\u958B\u62D3\u51FA\u4E00\u4E9B\u8868\u9762\u5E95\u4E0B\u7684\u6A21\u7CCA\u7A7A\u9593\u3002\u81F3\u65BC\u9019\u6B21\u662F\u4EC0\u9EBC\u6642\u4E8B\uFF0C\u66AB\u4E0D\u76F4\u63A5\u8AAA\u51FA\u4F86\uFF0C\u5B83\u8207\u53F0\u7063\u6709\u95DC\u4F46\u4E0D\u5728\u53F0\u7063\uFF0C\u5E0C\u671B\u89C0\u773E\u81EA\u884C\u89C0\u770B\u8A6E\u8B6F\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: ca762ded667e9864085b556505f4c185,
+        type: 3}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtworkName
+      value: "\u7121\u984C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtMaterial
+      value: "\u58D3\u514B\u529B\u984F\u6599\u3001\u5361\u5178\u897F\u5FB7"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -9182,7 +9225,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -9212,8 +9255,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u9752\u96F2\u756B\u5ECA\r\nhttp://www.cloud-gallery.org/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u660E\u6C34\u8DEF469\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 10:00 - 18:30\r\n\u96FB\u8A71\uFF1A 02 2533 2839\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e3b4148e3ca5424899a428f13c9a313,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -10814,7 +10864,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -12370,12 +12420,12 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.07741
+      value: 25.07747
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.57289
+      value: 121.57301
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -12435,7 +12485,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -12465,8 +12515,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u738B\u9053\u9280\u884C\u85DD\u6587\u7A7A\u9593\r\nhttps://www.o-bankef.org/About/about\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u5167\u6E56\u5340\u63D0\u9802\u5927\u9053\u4E8C\u6BB599\u865F\r\n\u958B\u653E\u6642\u9593\uFF1AMon.
+        \u2013 Fri. 09:00 \u2013 18:00 \r\n\u96FB\u8A71\uFF1A02 8752 7000\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: c2b81cfa4245d1e4f935724d1f839f42,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -12792,7 +12849,7 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.08405
+      value: 25.08409
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
@@ -12857,7 +12914,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -12887,8 +12944,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u7D22\u5361\u85DD\u8853\u4E2D\u5FC3\r\nhttp://www.soka-art.com/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u5824\u9802\u5927\u9053\u4E8C\u6BB5350\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sat. 10:00 - 19:00\r\n\u96FB\u8A71\uFF1A02 2533 9658\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: efc446fa070486c4c92d2939c1b861eb,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -13245,7 +13309,7 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.08011
+      value: 25.08003
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
@@ -13310,7 +13374,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -13340,8 +13404,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u53CC\u65B9\u85DD\u5ECA\r Double Square Gallery\nhttps://www.doublesquare.com.tw/en\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u5317\u5B89\u8DEF770\u5DF728\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sat. 10:30- 18:30\r\n\u96FB\u8A71\uFF1A 02 8501 2138\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 9585be9d86b590b43a066adcc4d22344,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -15164,7 +15235,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -15194,8 +15265,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u4E9E\u6D32\u85DD\u8853\u4E2D\u5FC3\r \u53F0\u5317\u4E8C\u9928\nhttp://www.asiaartcenter.org/asia/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u6A02\u7FA4\u4E8C\u8DEF93\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 10:00 - 18:30\r\n\u96FB\u8A71\uFF1A 02 8502 7939\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 61c5a711e81a4a441b9a9bfdfa561261,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -15679,7 +15757,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -15709,8 +15787,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u91C7\u6CE5\u85DD\u8853\r\nhttp://www.chinigallery.com/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u656C\u696D\u4E00\u8DEF128\u5DF748\u865F1\u6A13\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 10:30 - 19:00\r\n\u96FB\u8A71\uFF1A 02 7729 5809\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 82e87ebed26d643418587db7699b49a6,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -16508,7 +16593,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: e64549b671fb5874d9e8c6f1c30cd462, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -16707,12 +16792,12 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.07727
+      value: 25.0773
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.55615
+      value: 121.55611
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -17043,12 +17128,12 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
-      value: 25.07618
+      value: 25.07619
       objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.55603
+      value: 121.55599
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
@@ -18289,7 +18374,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -18319,8 +18404,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u5927\u89C0\u85DD\u8853\u7A7A\u9593\r DaGuan Gallery\nhttps://daguan.com.tw/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u656C\u696D\u4E8C\u8DEF69\u5DF716\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 10:30 - 18:30\r\n\u96FB\u8A71\uFF1A 02 8501 5677\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: c684559e92e93894f81534625303c203,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -18389,7 +18481,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -18424,8 +18516,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u7530\u5948\u85DD\u8853 Gin Huang Gallery\nhttps://ginhuanggallery.com/"
+      value: "\u5730\u5740\uFF1A \u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u656C\u696D\u4E00\u8DEF128\u5DF728\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sat. 10:00 - 18:00\r\n\u96FB\u8A71\uFF1A 02 2285 1858\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 594be2139c6feac409d4e3a04751f8d8,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -19242,7 +19341,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u6377\u904B\u897F\u6E56\u7AD9/ \u6587\u5B78\u5BB6:\u694A\u5A55"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u6377\u904B\u897F\u6E56\u7AD9"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -19252,13 +19351,19 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u694A\u5A55"
+      value: "\u694A\u5A55"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u6377\u904B\u897F\u6E56\u7AD9\n\u6587\u5B78\u5BB6\uFF1A\u694A\u5A55"
+      value: "\u95DC\u65BC\u6587\u5B78\u5BB6\uFF1A\r\n\u8457\u6709\u6563\u6587\u96C6\u300A\u623F\u9593\u300B\u3001\u300A\u5979\u5011\u90FD\u662F\u6211\u7684\uFF0C\u524D\u5973\u53CB\u300B\u3002\u66FE\u7372\u6642\u5831\u6587\u5B78\u734E\u3001\u6881\u5BE6\u79CB\u6587\u5B78\u734E\u3001\u53F0\u4E2D\u6587\u5B78\u734E\u3001\u5168\u570B\u5B78\u751F\u6587\u5B78\u734E\u7B49\u3002\u5165\u9078\u300A\u4E5D\u6B4C104\u5E74\u6563\u6587\u9078\u300B\u3001\u300A\u4E5D\u6B4C107\u5E74\u6563\u6587\u9078\u300B\u3001\u300A\u5275\u4E16\u7D0060\u5E74\u8A69\u9078\u300B\u3001\u300A\u6211\u5011\u9019\u4E00\u4EE3\uFF1A\u4E03\u5E74\u7D1A\u4F5C\u5BB6\u300B\u7B49\uFF0C\u64D4\u4EFB\u8015\u8398\u5BEB\u4F5C\u73ED\u8B1B\u5E2B\u3001\u5168\u570B\u53F0\u7063\u6587\u5B78\u71DF\u8B1B\u5E2B\u3002\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 9115d73f7d57a1046ad5188e88fedecb,
+        type: 3}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: lat
@@ -20054,7 +20159,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -20084,7 +20189,8 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u5B78\u5B78\r\nhttps://www.xuexue.tw/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u5167\u6E56\u5340\u5824\u9802\u5927\u9053\u4E8C\u6BB5207\u865F\r\n\u958B\u653E\u6642\u9593\uFF1AMon.
+        \u2013 Sun. 11:00 - 22:00\r\n\u96FB\u8A71\uFF1A 02 8751 6898\r"
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -20228,7 +20334,7 @@ PrefabInstance:
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
@@ -20258,8 +20364,15 @@ PrefabInstance:
     - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: ArtContent
-      value: "\u79CB\u5200\u9B5A\u85DD\u8853\u4E2D\u5FC3\r\nhttp://www.fishart.com.tw/\r"
+      value: "\u5730\u5740\uFF1A\u53F0\u5317\u5E02\u4E2D\u5C71\u5340\u57FA\u6E56\u8DEF137\u865F\r\n\u958B\u653E\u6642\u9593\uFF1ATue.
+        \u2013 Sun. 13:00 - 19:00\r\n\u96FB\u8A71\uFF1A 02 2532 3800\r"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 389bff2305f72e54ebb9e3fd239d9d5b,
+        type: 3}
     - target: {fileID: 2009583644900855212, guid: 1096e6610a0680f469940de02ea6e0b4,
         type: 3}
       propertyPath: lat
@@ -21796,7 +21909,7 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: POI_Name
-      value: "\u5927\u76F4\u7F8E\u5824\u82B1\u5712\u4E09-\u5433\u828A\u9824"
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u5927\u76F4\u7F8E\u5824\u82B1\u5712\u4E09(\u5317)"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -21806,12 +21919,28 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u5433\u828A\u9824"
+      value: "\u5433\u828A\u9824"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u5927\u76F4\u7F8E\u63D0\u82B1\u5712\u4E09\uFF08\u53F3\uFF09\n\u85DD\u8853\u5BB6\uFF1A\u5433\u828A\u9824"
+      value: "\u95DC\u65BC\u85DD\u8853\u5BB6:\r\n\u5F9E\u4E8B\u8907\u5408\u5A92\u6750\u88DD\u7F6E\u5275\u4F5C\uFF0C\u95DC\u6CE8\u65E5\u5E38\u6027\u7684\u6703\u73FE\u8C61\u8207\u6587\u5316\uFF0C\u601D\u8003\u7B26\u865F\u672C\u8EAB\u8207\u5176\u4ECB\u9762\u7684\u95DC\u4FC2\uFF0C\u5C0D\u61C9\u7576\u4EE3\u52A0\u5DE5\u6750\u6599\u81A0\u5E36\uFF0C\u52A0\u4EE5\u7DE8\u78BC\u7D44\u69CB\uFF0C\u5F62\u6210\u5177\u7368\u7279\u8A9E\u5F59\u7684\u8996\u89BA\u5716\u50CF\u3002\u8FD1\u671F\u900F\u904E\u570B\u5167\u5916\u99D0\u6751\u5275\u4F5C\u8207\u73FE\u5730\u88FD\u4F5C\u7684\u88DD\u7F6E\u85DD\u8853\uFF0C\u767C\u5C55\u51FA\u5225\u5177\u5340\u57DF\u6027\u7279\u8272\u7684\u4F5C\u54C1\u3002\r\n\r\n\u5275\u4F5C\u7406\u5FF5:\r\n\u5C07\u57CE\u5E02\u5143\u7D20\u5316\u70BA\u62FC\u8CBC\u8272\u584A\uFF0C\u88FD\u9020\u5E73\u9762\u98A8\u666F\u7ACB\u9AD4\u5316\u7684\u8272\u5149\u7A7A\u9593\uFF0C\u516C\u8ECA\u4EAD\u8F49\u63DB\u6210\u4E00\u53EF\u7A7F\u900F\u7684\u666F\u7A97\u88DD\u7F6E\uFF0C\u900F\u904E\u4EBA\u8207\u7A97\u7684\u884C\u70BA\u4E92\u52D5\u9032\u884C\u9023\u7D50\uFF0C\u6355\u6349\u5F7C\u6B64\u7684\u5B9A\u4F4D\u95DC\u4FC2\uFF0C\u611F\u53D7\u900F\u904E\u5149\u3001\u5F71\u3001\u8272\u584A\u96A8\u6642\u9593\u8B8A\u5316\u7684\u6A02\u8DA3\u3002\u4EE5\u73FE\u5730\u88FD\u4F5C\u88DD\u7F6E\u4F5C\u70BA\u8868\u9054\u5A92\u4ECB\uFF0C\u7528\u65B0\u7684\u773C\u5149\u5F15\u5165\u4E86\u6211\u5011\u5468\u570D\u719F\u6089\u7684\u7B26\u865F\uFF0C\u91CD\u65B0\u5275\u9020\u57CE\u5E02\u88E1\u7684\u98A8\u666F\uFF0C\u5C07\u7A97\u82B1\u683C\u8207\u6578\u64DA\u7C21\u5316\u70BA\u7A97\u53E3\u4ECB\u9762\u5143\u7D20\u91CD\u65B0\u6DF7\u5408\uFF0C\u4F5C\u70BA\u65B0\u8996\u91CE\uFF0C\u7DAD\u5EA6\uFF0C\u958B\u653E\u601D\u60F3\u7684\u96B1\u55BB\u3002\u65B0\u820A\u6587\u5316\u7684\u878D\u5408\u70BA\u6211\u5011\u63D0\u4F9B\u4E86\u4E00\u500B\u8996\u89D2\uFF0C\u4E0D\u50C5\u53EF\u4EE5\u770B\u5230\u6211\u5011\u5468\u570D\u7684\u4E00\u5207\uFF0C\u4E26\u5448\u73FE\u6211\u5011\u60F3\u8981\u5728\u9019\u500B\u57CE\u5E02\u4E2D\u5C0B\u627E\u7684\u6771\u897F\u3002\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ce20ec5dee60bc488e291e61f6c3f16,
+        type: 3}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtworkName
+      value: "\u900F\u8996\u7A97"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtMaterial
+      value: "\u6578\u4F4D\u8F38\u51FA\u3001\u81A0\u5E36\u3001\u58D3\u514B\u529B\u7247\u3001\u5361\u9EDE\u897F\u5FB7"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901573, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
@@ -23159,13 +23288,44 @@ PrefabInstance:
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtistName
-      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u8FFD\u5947"
+      value: "\u85DD\u8853\u5BB6\uFF1A\u59DC\u540D\u99FF\u3001\u5927\u6A4B\u982D\u85DD\u8853\u5DE5\u4F5C\u5BA4
+        / \u6587\u5B78\u5BB6\uFF1A\u8FFD\u5947"
       objectReference: {fileID: 0}
     - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
         type: 3}
       propertyPath: ArtContent
-      value: "\u4EC1\u5BF6\u5927\u6A13\n\u85DD\u8853\u5BB6\uFF1A\u59DC\u540D\u99FF\u3001\u5927\u6A4B\u982D\u85DD\u8853\u5DE5\u4F5C\u5BA4
-        / \u6587\u5B78\u5BB6\uFF1A\u8FFD\u5947"
+      value: "\u95DC\u65BC\u85DD\u8853\u5BB6\uFF1A\r\n\u4EE5\u59DC\u540D\u99FF\u8207\u5468\u5B78\u6DB5\u70BA\u9996\u7684\u5927\u6A4B\u982D\u85DD\u8853\u5DE5\u4F5C\u5BA4\u3002\u4EE5\u300C\u7D50\u69CB\u300D\u4F5C\u70BA\u6211\u5011\u88DD\u7F6E\u85DD\u8853\u7684\u6838\u5FC3\u3002\u4E0D\u55AE\u7D14\u662F\u9020\u578B\u9762\u5411\u7684\u300C\u7D50\u69CB\u300D\uFF0C\u4E5F\u5305\u542B\u74B0\u5883\u3001\u57CE\u5E02\u3001\u4EBA\u8207\u793E\u7FA4\u4E4B\u9593\u7684\u300C\u95DC\u4FC2\u300D\u3002\u9762\u5C0D\u4E0D\u540C\u7684\u5730\u57DF\u4E2D\uFF0C\u5B58\u5728\u4E0D\u540C\u7684\u7D50\u69CB\u53EF\u80FD\uFF0C\u5F9E\u4E0D\u540C\u7684\u5728\u5730\u8108\u7D61\uFF0C\u601D\u8003\u6BCF\u500B\u5730\u65B9\u7368\u6709\u7684\u300C\u7D50\u69CB\u6280\u8853\u300D\uFF0C\u69CB\u601D\u7B26\u5408\u6BCF\u4E00\u500B\u5730\u57DF\u7684\u88DD\u7F6E\u8A08\u756B\u3002\u6B64\u6B21\u6D3B\u52D5\u70BA\u5275\u4F5C\u8A08\u756B\u300C0000s\u300D\u4E4B\u4E00\uFF0C\u300C\u4EE5\u85DD\u8853\u4F5C\u70BA\u4E00\u7A2E\u95B1\u8B80\u57CE\u5E02\u7684\u65B9\u6CD5\uFF0C\u65BC\u81EA\u8EAB\u8EAB\u8655\u74B0\u5883\u4E2D\uFF0C\u958B\u5C55\u66F4\u591A\u7684\u53EF\u80FD\u6027\u3002\u300D\r\n\r\n\u95DC\u65BC\u6587\u5B78\u5BB6\uFF1A\r\n1991\u5E7412\u6708\u751F\uFF0C\u9AD8\u96C4\u4EBA\u3002\u7562\u696D\u65BC\u9AD8\u96C4\u5973\u4E2D\u3001\u653F\u6CBB\u5927\u5B78\u516C\u5171\u884C\u653F\u5B78\u7CFB\uFF1B\u6163\u65BC\u5F80\u8FD4\u5357\u5317\uFF0C\u4E00\u679A\u96D9\u68F2\u52D5\u7269\u3002\u719F\u7A14\u65BC\u7CDF\u7CD5\u7684\u751F\u6D3B\u3001\u7CDF\u7CD5\u7684\u6587\u5B57\u3002\u76F8\u4FE1\u5275\u4F5C\u80FD\u5920\u7DE9\u89E3\u82E6\u75DB\uFF0C\u4E5F\u80FD\u5920\u52A0\u5287\u75DB\u82E6\u3002\u76F8\u4FE1\u6240\u6709\u4EBA\u90FD\u662F\u62B1\u8457\u75DB\u82E6\u6D3B\u4E0B\u53BB\u7684\u751F\u9084\u8005\uFF0C\u4E5F\u76F8\u4FE1\u9019\u6A23\u7684\u751F\u9084\uFF0C\u66F4\u6709\u610F\u7FA9\u3002\u8457\u6709\u8A69\u6587\u96C6\u300A\u9019\u88CF\u6C92\u6709\u5149\u300B\u3001\u8A69\u96C6\u300A\u7D50\u75C2\u300B\u30022019\u5E74\uFF0C\u5373\u5C07\u63A8\u51FA\u7B2C\u4E09\u672C\u500B\u4EBA\u6563\u6587\u96C6\uFF08\u7C4C\u5099\u4E2D\uFF09\u3002\r\n\r\n\u5275\u4F5C\u7406\u5FF5\uFF1A\r\n\u300C\u770B\u8207\u88AB\u770B\uFF0C\u4EBA\u8207\u90FD\u5E02\u4E00\u76F4\u90FD\u8655\u5728\u4E00\u7A2E\u76F8\u4E92\u7684\u95DC\u4FC2\u4E2D\u3002\u4EE5\u64EC\u4EBA\u5316\u7684\u96D5\u5851\u7269\u4EF6\u4F5C\u70BA\u65B9\u6CD5\uFF0C\u85C9\u6B64\u5EF6\u5C55\u51FA\u66F4\u591A\u4EBA\u8207\u8EAB\u8655\u4E16\u754C\u7684\u60F3\u50CF\u3002\u300D\u5C6C\u65BC\u300C0000s\u300D\u5275\u4F5C\u8A08\u756B\u4E4B\u4E00\u3002\u4EE5\u5177\u8C61\u7684\u751F\u7269\u9020\u578B\u4F5C\u70BA\u4E00\u7A2E\u516C\u5171\u85DD\u8853\u7684\u85DD\u8853\u65B9\u6CD5\uFF1B\u516C\u8ECA\u7AD9\u4E00\u76F4\u90FD\u662F\u4E00\u500B\u66AB\u505C\u8207\u7B49\u5F85\u7684\u7BC0\u9EDE\uFF0C\u85C9\u7531\u500B\u4EBA\u5275\u4F5C\u9020\u578B\u7684\u7F6E\u5165\uFF1B\u64EC\u4EBA\u5316\u7684\u65B9\u5F0F\u4E2D\u6539\u8B8A\u539F\u6709\u516C\u8ECA\u7AD9\u539F\u6709\u7684\u610F\u7FA9\uFF0C\u6EA2\u51FA\u66F4\u591A\u7684\u60F3\u50CF\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 84db61aac7a2f4441b98637ad13445e8,
+        type: 3}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtistContent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtworkName
+      value: "0000_\u9B5F\u9B5A"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtMaterial
+      value: "\u5E03\u6599\u3001LED\u71C8\u5149\u7CFB\u7D71"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: ArtSize
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351247010572901572, guid: dcc78b85d6886de4091b2566ef6a96bf,
+        type: 3}
+      propertyPath: POI_Name
+      value: "\u6587\u5B78\u8D70\u8B80\uFF1A\u4EC1\u5BF6\u5927\u6A13\u7AD9"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc78b85d6886de4091b2566ef6a96bf, type: 3}
@@ -23383,85 +23543,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &4847156039340668524
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 624959128}
-    m_Modifications:
-    - target: {fileID: 2009583644900855201, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_Name
-      value: VIPPoint (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: typeOfPOI
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2009583644900855213, guid: 1096e6610a0680f469940de02ea6e0b4,
-        type: 3}
-      propertyPath: ArtContent
-      value: "\u803F\u756B\u5ECA\nhttp://www.tinakenggallery.com/"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1096e6610a0680f469940de02ea6e0b4, type: 3}
 --- !u!222 &4922055793897057623
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24026,12 +24107,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -170}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 1}
---- !u!4 &6388346248885844942 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2009583644900855202, guid: 1096e6610a0680f469940de02ea6e0b4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4847156039340668524}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6388346250403501232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24172,6 +24247,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7721978520746856557, guid: f9f5ca1c5cd4de04785d750945cfa08d,
         type: 3}
+    - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: lat
+      value: 25.08419
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: lon
+      value: 121.55607
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
 --- !u!222 &6468168420300885316

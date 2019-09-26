@@ -17,9 +17,9 @@ public class POIData : MonoBehaviour
     [HideInInspector] public Sprite spriteLoc;
     public string ArtistName;
     public string ArtworkName;
+    public string ArtMaterial;
     public string ArtSize;
     public string ArtAge;
-    public string ArtMaterial;
     public Sprite ArtPhoto;
     [TextArea] public string ArtContent;
     public string ArtCopyright;

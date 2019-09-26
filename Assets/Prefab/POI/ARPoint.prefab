@@ -67,9 +67,9 @@ MonoBehaviour:
   spriteLoc: {fileID: 0}
   ArtistName: 
   ArtworkName: 
+  ArtMaterial: 
   ArtSize: 
   ArtAge: 
-  ArtMaterial: 
   ArtPhoto: {fileID: 0}
   ArtContent: 
   ArtCopyright: 
@@ -209,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6388346250236578970}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 6388346249367221558}

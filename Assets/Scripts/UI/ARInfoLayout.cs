@@ -25,6 +25,7 @@ public class ARInfoLayout : PanelExtendtion
     public Button ArtworkLink;
     public ArtworkInfoBox ArtworkInfo;
     public Text ContentText;
+    Vector3 ContentTextPos;
     public Text CopyrightText;
 
     public POIData currentData;
@@ -42,6 +43,8 @@ public class ARInfoLayout : PanelExtendtion
 
         Open2D.onClick.AddListener(OpenAR2D);
         Open3D.onClick.AddListener(OpenAR3D);
+
+        ContentTextPos = ContentText.rectTransform.localPosition;
     }
 
     void Update(){
@@ -129,14 +132,16 @@ public class ARInfoLayout : PanelExtendtion
         ContentPhotoInText.text = "";
 
         ArtworkLink.interactable = true;
-        ArtworkInfo.Artwork.text = currentData.ArtworkName;
         ArtworkInfo.Artist.text = currentData.ArtistName;
-        ArtworkInfo.Age.text = currentData.ArtAge;
+        ArtworkInfo.Artwork.text = currentData.ArtworkName;
         ArtworkInfo.MaterialInfo.text = currentData.ArtMaterial;
         ArtworkInfo.SizeInfo.text = currentData.ArtSize;
+        ArtworkInfo.Age.text = currentData.ArtAge;
 
         ContentText.text = currentData.ArtContent;
         CopyrightText.text = currentData.ArtCopyright;
+
+        ContentText.rectTransform.localPosition = ContentTextPos;
 
         Open2D.gameObject.SetActive(true);
         Open3D.gameObject.SetActive(true);
@@ -153,14 +158,16 @@ public class ARInfoLayout : PanelExtendtion
         ContentPhotoInText.text = "";
 
         ArtworkLink.interactable = false;
-        ArtworkInfo.Artwork.text = currentData.PhotoAge;
         ArtworkInfo.Artist.text = currentData.PhotoSource;
-        ArtworkInfo.Age.text = "";
+        ArtworkInfo.Artwork.text = currentData.PhotoAge;
         ArtworkInfo.MaterialInfo.text = "";
         ArtworkInfo.SizeInfo.text = "";
+        ArtworkInfo.Age.text = "";
 
         ContentText.text = currentData.ViewpointContent;
         CopyrightText.text = "";
+
+        ContentText.rectTransform.localPosition = ContentTextPos;
 
         Open2D.gameObject.SetActive(true);
         Open3D.gameObject.SetActive(true);
@@ -169,22 +176,24 @@ public class ARInfoLayout : PanelExtendtion
     }
 
     public void RefreshInfoBus_FromPOI(){
-        Title.text = currentData.ArtistName;
+        Title.text = currentData.POI_Name;
         MapIcon.sprite = currentData.spriteLoc;
 
-        ContentPhoto.enabled = false;
-        ContentPhoto.sprite = null;
-        ContentPhotoInText.text = currentData.ArtContent;
+        ContentPhoto.enabled = true;
+        ContentPhoto.sprite = currentData.ArtPhoto;
+        ContentPhotoInText.text = "";
 
         ArtworkLink.interactable = false;
+        ArtworkInfo.Artist.text = currentData.ArtistName;
         ArtworkInfo.Artwork.text = "";
-        ArtworkInfo.Artist.text = "";
-        ArtworkInfo.Age.text = "";
         ArtworkInfo.MaterialInfo.text = "";
         ArtworkInfo.SizeInfo.text = "";
-
-        ContentText.text = "";
+        ArtworkInfo.Age.text = "";
+        
+        ContentText.text = currentData.ArtContent;
         CopyrightText.text = "";
+
+        ContentText.rectTransform.localPosition = new Vector3(ContentTextPos.x, ContentTextPos.y + 180, ContentTextPos.z);
 
         Open2D.gameObject.SetActive(false);
         Open3D.gameObject.SetActive(false);
@@ -196,19 +205,28 @@ public class ARInfoLayout : PanelExtendtion
         Title.text = currentData.POI_Name;
         MapIcon.sprite = currentData.spriteLoc;
 
-        ContentPhoto.enabled = false;
-        ContentPhoto.sprite = null;
-        ContentPhotoInText.text = currentData.ArtContent;
-
-        ArtworkLink.interactable = false;
-        ArtworkInfo.Artwork.text = "";
-        ArtworkInfo.Artist.text = "";
-        ArtworkInfo.Age.text = "";
-        ArtworkInfo.MaterialInfo.text = "";
-        ArtworkInfo.SizeInfo.text = "";
-
+        ContentPhotoInText.text = "";
         ContentText.text = "";
         CopyrightText.text = "";
+
+        ContentPhoto.sprite = currentData.ArtPhoto;
+        if(ContentPhoto.sprite != null){
+            ContentPhoto.enabled = true;
+            ContentText.text = currentData.ArtContent;
+            ContentText.rectTransform.localPosition = new Vector3(ContentTextPos.x, ContentTextPos.y + 580, ContentTextPos.z);
+        } else {
+            ContentPhoto.enabled = false;
+            ContentPhotoInText.text = currentData.ArtContent;
+            ContentText.rectTransform.localPosition = new Vector3(ContentTextPos.x, ContentTextPos.y + 880, ContentTextPos.z);
+        }
+        
+
+        ArtworkLink.interactable = false;
+        ArtworkInfo.Artist.text = "";
+        ArtworkInfo.Artwork.text = "";
+        ArtworkInfo.MaterialInfo.text = "";
+        ArtworkInfo.SizeInfo.text = "";
+        ArtworkInfo.Age.text = "";
 
         Open2D.gameObject.SetActive(false);
         Open3D.gameObject.SetActive(false);
