@@ -31,10 +31,13 @@ public class RequirePermissions : MonoBehaviour
             if(!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.ExternalStorageWrite)){
                 UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.ExternalStorageWrite);
             } else totalRequest++;
+            if(!UnityEngine.Android.Permission.HasUserAuthorizedPermission("android.permission.INTERNET")){
+                UnityEngine.Android.Permission.RequestUserPermission("android.permission.INTERNET");
+            } else totalRequest++;
 
             yield return new WaitForSeconds(1.0f);
 
-            if(totalRequest >= 3)
+            if(totalRequest >= 4)
                 break;
          }
         #endif
