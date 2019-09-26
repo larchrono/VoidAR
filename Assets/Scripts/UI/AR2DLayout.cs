@@ -23,6 +23,7 @@ public class AR2DLayout : MonoBehaviour
     void OnEnable() {
         Screen.autorotateToLandscapeLeft = true;
         Screen.autorotateToLandscapeRight = true;
+        Screen.orientation = ScreenOrientation.AutoRotation;
     }
 
     void OnDisable() {
