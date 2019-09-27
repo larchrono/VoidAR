@@ -11,8 +11,10 @@ public class RequirePermissions : MonoBehaviour
 
     void Awake()
     {
+        #if UNITY_2018_3_OR_NEWER && UNITY_ANDROID
         if (!UnityEngine.Android.Permission.HasUserAuthorizedPermission(UnityEngine.Android.Permission.FineLocation))
             UnityEngine.Android.Permission.RequestUserPermission(UnityEngine.Android.Permission.FineLocation);
+        #endif
     }
 
     IEnumerator Start(){
