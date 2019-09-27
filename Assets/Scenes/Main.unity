@@ -9417,6 +9417,7 @@ GameObject:
   - component: {fileID: 807957511}
   - component: {fileID: 807957510}
   - component: {fileID: 807957509}
+  - component: {fileID: 807957514}
   - component: {fileID: 807957513}
   m_Layer: 5
   m_Name: CanvasMain
@@ -9543,6 +9544,18 @@ MonoBehaviour:
   DebugPanel: {fileID: 1661170690}
   AR2DPanel: {fileID: 2091002693}
   AR3DPanel: {fileID: 1424389961}
+--- !u!114 &807957514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807957508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf789fa9f624104f9b5121f8cbad38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &810755106
 GameObject:
   m_ObjectHideFlags: 0
