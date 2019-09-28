@@ -161,7 +161,7 @@ public class ARInfoLayout : PanelExtendtion
         ArtworkInfo.Artist.text = currentData.PhotoSource;
         ArtworkInfo.Artwork.text = currentData.PhotoAge;
         ArtworkInfo.MaterialInfo.text = "";
-        ArtworkInfo.SizeInfo.text = "";
+        ArtworkInfo.SizeInfo.text = currentData.ArtContent;
         ArtworkInfo.Age.text = "";
 
         ContentText.text = currentData.ViewpointContent;

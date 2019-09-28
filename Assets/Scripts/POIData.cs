@@ -33,7 +33,7 @@ public class POIData : MonoBehaviour
 
     [Header("Old Picture")]
     public string ViewpointName;
-    public string ViewpointContent;
+    [TextArea] public string ViewpointContent;
     public Sprite ViewpointPhoto;
     public string PhotoAge;
     public string PhotoSource;
