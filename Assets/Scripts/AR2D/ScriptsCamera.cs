@@ -61,6 +61,9 @@ public class ScriptsCamera : MonoBehaviour
         //while( rotAngle < 0 ) rotAngle += 360;
         //while( rotAngle > 360 ) rotAngle -= 360;
 
+        float scaleY = runningWebcam.videoVerticallyMirrored ? -1f : 1f; // Find if the camera is mirrored or not  
+        background.rectTransform.localScale = new Vector3(1f, scaleY, 1f); // Swap the mirrored camera  
+
         if (runningWebcam != null && lastRotationAngle != runningWebcam.videoRotationAngle)
         {
             OnOrientationChanged();
