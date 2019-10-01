@@ -5349,7 +5349,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 539643693}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.32670453
+  m_Size: 0.3220917
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10083,7 +10083,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2D\u958B\u555F"
+  m_Text: "\u5E38\u614BAR"
 --- !u!222 &841761122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14159,7 +14159,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ViewpointPhoto
       value: 
-      objectReference: {fileID: 21300000, guid: 4847c2943bd74c249af018a895a3b1e7,
+      objectReference: {fileID: 21300000, guid: 8c293b7f2944fe34fbf83e6f16cf0ba9,
         type: 3}
     - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
@@ -15150,7 +15150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1277563732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15167,10 +15167,10 @@ RectTransform:
   m_Father: {fileID: 494158295}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -35}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1277563733
 MonoBehaviour:
@@ -17900,7 +17900,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1636576726}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.40839773
+  m_Size: 0.40689325
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18125,7 +18125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1673258197
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18142,10 +18142,10 @@ RectTransform:
   m_Father: {fileID: 494158295}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 260, y: -35}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1673258198
 MonoBehaviour:
@@ -20777,7 +20777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3D\u958B\u555F"
+  m_Text: "\u9AD8\u968EAR"
 --- !u!222 &1978838858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23674,12 +23674,12 @@ PrefabInstance:
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
-      value: 25.08471
+      value: 25.08438
       objectReference: {fileID: 0}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lon
-      value: 121.55596
+      value: 121.55581
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f8d0ed12d40e4cb12282bacdb54d4, type: 3}

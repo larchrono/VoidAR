@@ -1,0 +1,28 @@
+﻿Xcode Build 設定
+
+1.) Target -> Unity-iPhone > General > Frameworks, Libraries 加入 Accelerate.framework
+2.) Target -> Unity-iPhone > Build Settings > Build Options > Encode Bitcode 改為No
+3.) Target -> Unity-iPhone > Info > Custom iOS Target Properties > 加入5個資訊Key (以下
+
+● Privacy - Camera Usage Description
+Value : 請啟用相機來使用AR相關功能
+
+● Privacy - Location Always and When In Use Usage Description
+Value : 請啟用定位資訊來使用作品導覽
+
+● Privacy - Location When In Use Usage Description
+Value : 請啟用定位資訊來使用作品導覽
+
+● Privacy - Photo Library Additions Usage Description
+Value : 請啟用設定來開啟拍照功能
+
+● Privacy - Photo Library Usage Description
+Value : 請啟用設定來開啟拍照功能
+
+4.) Target -> Unity-iPhone > Build Settings > Archtectures > Archtectures > 刪除其他值只剩 arm64
+5.) Target -> Unity-iPhone > Build Settings > Archtectures > Valud Archtectures > 刪除其他值只剩 arm64 arm64e
+6.) Target -> Unity-iPhone > Build Settings > Signing > Code Signing Identity > 全改為 iOS Developer (共9項)
+7.) Target -> Unity-iPhone > Signing & Capabilities > Signing > 勾選 Automatically Manage signing
+8.) Target -> Unity-iPhone > General > Identity > Version > 向上追加數值
+9.) Target -> Unity-iPhone > General > Identity > Build > 向上追加數值
+

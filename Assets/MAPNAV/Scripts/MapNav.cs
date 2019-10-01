@@ -556,6 +556,7 @@ public class MapNav : MonoBehaviour
 
             url += "&routeWidth=" + routeWidth;
         }
+
         //MapQuest Markers
         if (markers != null) {
 
@@ -1268,6 +1269,12 @@ public class MapNav : MonoBehaviour
 		layout.NavRight.interactable = true;
 		layout.NavBottom.interactable = true;
 		layout.NavLeft.interactable = true;
+	}
+
+	void PressGo2D(){
+		//routeEnabled = true;
+		//fromMyLocation = true;
+
 	}
 
 	void PressLocate(){

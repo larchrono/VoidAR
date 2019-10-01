@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,6 +30,12 @@ public class ARInfoLayout : PanelExtendtion
     public Text CopyrightText;
 
     public POIData currentData;
+
+
+    /////////////
+
+    public Action On2DGoInvoke;
+    public Action On3DGoInvoke;
  
     void Awake() {
         instance = this;
@@ -40,6 +47,7 @@ public class ARInfoLayout : PanelExtendtion
         ArtworkLink.onClick.AddListener(OpenArtistWindow);
 
         Go2D.onClick.AddListener(Enable2DGo);
+        Go3D.onClick.AddListener(Enable3DGo);
 
         Open2D.onClick.AddListener(OpenAR2D);
         Open3D.onClick.AddListener(OpenAR3D);
@@ -70,10 +78,20 @@ public class ARInfoLayout : PanelExtendtion
     }
 
     void Enable2DGo(){
-        PlayerEvent.instance.SetTargetGoal(currentData.transform);
-        PlayerEvent.instance.OnUpdateDistance += OnUpdateDistance;
+        //Old Method , Draw Direct Line
+        //PlayerEvent.instance.SetTargetGoal(currentData.transform);
+        //PlayerEvent.instance.OnUpdateDistance += OnUpdateDistance;
+
+        On2DGoInvoke?.Invoke();
+
         CloseSelf();
         PanelNaving.OpenSelf(null);
+    }
+
+    void Enable3DGo(){
+        On2DGoInvoke?.Invoke();
+
+
     }
 
     public void Stop2DGo(){
