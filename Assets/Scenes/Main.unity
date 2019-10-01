@@ -10083,7 +10083,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2D\u958B\u555F"
+  m_Text: "\u5E38\u614BAR"
 --- !u!222 &841761122
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14159,7 +14159,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ViewpointPhoto
       value: 
-      objectReference: {fileID: 21300000, guid: 4847c2943bd74c249af018a895a3b1e7,
+      objectReference: {fileID: 21300000, guid: 8c293b7f2944fe34fbf83e6f16cf0ba9,
         type: 3}
     - target: {fileID: 7166181899371555910, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
@@ -20777,7 +20777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3D\u958B\u555F"
+  m_Text: "\u9AD8\u968EAR"
 --- !u!222 &1978838858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23674,12 +23674,12 @@ PrefabInstance:
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lat
-      value: 25.08471
+      value: 25.08438
       objectReference: {fileID: 0}
     - target: {fileID: 7166181899371555911, guid: e10f8d0ed12d40e4cb12282bacdb54d4,
         type: 3}
       propertyPath: lon
-      value: 121.55596
+      value: 121.55581
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f8d0ed12d40e4cb12282bacdb54d4, type: 3}
