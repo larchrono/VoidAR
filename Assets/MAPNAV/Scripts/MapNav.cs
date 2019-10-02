@@ -305,6 +305,7 @@ public class MapNav : MonoBehaviour
 		
 		// Access granted and location value could be retrieved
 		else {
+			
 			if(!mapDisabled){
 				print("GPS Fix established. Setting position..");
 				status = "GPS Fix established!\nSetting position ...";
@@ -337,7 +338,7 @@ public class MapNav : MonoBehaviour
         }
 
 		//Rescale map, set new camera height, and resize user pointer according to new zoom level
-		 StartCoroutine(ReScale()); 
+		StartCoroutine(ReScale()); 
 
 		//Set player's position using new location data (every "updateRate" seconds)
 		//Default value for updateRate is 0.1. Increase if necessary to improve performance
@@ -1304,8 +1305,9 @@ public class MapNav : MonoBehaviour
 	}
 
 
-	IEnumerable StopApplication(){
+	IEnumerator StopApplication(){
 		UITabCenter.instance.PanelWarnning.gameObject.SetActive(true);
+		Debug.Log("In Quit Application");
 		while(true){
 			yield return new WaitForSeconds(5);
 		}
