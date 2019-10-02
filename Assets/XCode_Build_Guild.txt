@@ -2,7 +2,7 @@
 
 1.) Target -> Unity-iPhone > General > Frameworks, Libraries 加入 Accelerate.framework
 2.) Target -> Unity-iPhone > Build Settings > Build Options > Encode Bitcode 改為No
-3.) Target -> Unity-iPhone > Info > Custom iOS Target Properties > 加入5個資訊Key (以下
+3.) Target -> Unity-iPhone > Info > Custom iOS Target Properties > 加入5個資訊Key, 刪除1個資訊key (以下
 
 ● Privacy - Camera Usage Description
 Value : 請啟用相機來使用AR相關功能
@@ -18,6 +18,9 @@ Value : 請啟用設定來開啟拍照功能
 
 ● Privacy - Photo Library Usage Description
 Value : 請啟用設定來開啟拍照功能
+
+● Application does not run in background
+"刪除"以上權限
 
 4.) Target -> Unity-iPhone > Build Settings > Archtectures > Archtectures > 刪除其他值只剩 arm64
 5.) Target -> Unity-iPhone > Build Settings > Archtectures > Valud Archtectures > 刪除其他值只剩 arm64 arm64e
