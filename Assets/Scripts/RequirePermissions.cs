@@ -46,4 +46,8 @@ public class RequirePermissions : MonoBehaviour
         GoogleMap.SetActive(true);
         yield return null;
     }
+
+    public void QuitApplication(){
+        Application.Quit();
+    }
 }

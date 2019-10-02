@@ -24,6 +24,8 @@ public class UITabCenter : MonoBehaviour
     public PageBehaviour PanelActivity;
     public PageBehaviour PanelAbout;
 
+    public RectTransform PanelWarnning;
+
 
     public ArtistLayout Prefab_ArtistFlowWindow;
 
