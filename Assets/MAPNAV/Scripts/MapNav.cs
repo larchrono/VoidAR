@@ -268,11 +268,11 @@ public class MapNav : MonoBehaviour
 		if (!Input.location.isEnabledByUser){
  
 			//This message prints to the Editor Console
-			print("Please enable location services and restart the App");
+			Debug.Log("Please enable location services and restart the App");
 			//You can use this "status" variable to show messages in your custom user interface (GUIText, etc.)
 			status = "Please enable location services\n and restart the App";
-			yield return new WaitForSeconds(4);
-			Application.Quit();
+			
+			yield return StopApplication();
 		}
 		#endif
 		// Start service before querying location
@@ -291,16 +291,16 @@ public class MapNav : MonoBehaviour
 		if (maxWait < 1) {
 			print("Unable to initialize location services.\nPlease check your location settings and restart the App");
 			status = "Unable to initialize location services.\nPlease check your location settings\n and restart the App";
-			yield return new WaitForSeconds(4);
-			Application.Quit();
+
+			yield return StopApplication();
 		}
 
 		// Connection has failed
 		if (Input.location.status == LocationServiceStatus.Failed) {
 			print("Unable to determine your location.\nPlease check your location setting and restart this App");
 			status = "Unable to determine your location.\nPlease check your location settings\n and restart this App";
-			yield return new WaitForSeconds(4);
-			Application.Quit();
+
+			yield return StopApplication();
 		}
 		
 		// Access granted and location value could be retrieved
@@ -1301,5 +1301,13 @@ public class MapNav : MonoBehaviour
 		borderTile = 4;
 		StartCoroutine(MapPosition());
 		StartCoroutine(ReScale());
+	}
+
+
+	IEnumerable StopApplication(){
+		UITabCenter.instance.PanelWarnning.gameObject.SetActive(true);
+		while(true){
+			yield return new WaitForSeconds(5);
+		}
 	}
 }
