@@ -9934,7 +9934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &837761596
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16849,7 +16849,6 @@ MonoBehaviour:
   BTNShot: {fileID: 1428730870}
   BTNTracking: {fileID: 761642049}
   ArtworkPool: {fileID: 363536657}
-  Prefab_Object: {fileID: 0}
 --- !u!4 &1424389962
 Transform:
   m_ObjectHideFlags: 0
