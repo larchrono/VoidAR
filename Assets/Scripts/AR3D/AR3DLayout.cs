@@ -13,8 +13,6 @@ public class AR3DLayout : MonoBehaviour
     public Button BTNTracking;
     public Transform ArtworkPool;
 
-    public GameObject Prefab_Object;
-
     SaveScreen saveScreen;
 
     void Awake(){

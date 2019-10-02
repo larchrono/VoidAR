@@ -1306,7 +1306,7 @@ public class MapNav : MonoBehaviour
 
 
 	IEnumerator StopApplication(){
-		UITabCenter.instance.PanelWarnning.gameObject.SetActive(true);
+		UITabCenter.instance.PanelWarnningLocation.gameObject.SetActive(true);
 		Debug.Log("In Quit Application");
 		while(true){
 			yield return new WaitForSeconds(5);

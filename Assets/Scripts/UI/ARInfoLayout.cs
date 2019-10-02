@@ -118,7 +118,20 @@ public class ARInfoLayout : PanelExtendtion
         GoadRange.text = "距離 " + value.ToString("#.#") + " m";
     }
 
-    void OpenAR2D(){
+    IEnumerator CheckAR2D(){
+        yield return null;
+
+        #if UNITY_IOS
+        yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
+        if (!Application.HasUserAuthorization(UserAuthorization.WebCam))
+        {
+            UITabCenter.instance.PanelWarnningCamera.gameObject.SetActive(true);
+            while(true){
+                yield return new WaitForSeconds(5);
+            }
+        }
+        #endif
+
         if(currentData.UseModel != null) {
             UITabCenter.instance.AR2DPanel.SetupArtwork(currentData.UseModel);
         } else if (currentData.UseMask != null) {
@@ -128,13 +141,34 @@ public class ARInfoLayout : PanelExtendtion
         UITabCenter.instance.AR2DPanel.StartAR2D();
     }
 
-    void OpenAR3D(){
+    IEnumerator CheckAR3D(){
+        yield return null;
+
+        #if UNITY_IOS
+        yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
+        if (!Application.HasUserAuthorization(UserAuthorization.WebCam))
+        {
+            UITabCenter.instance.PanelWarnningCamera.gameObject.SetActive(true);
+            while(true){
+                yield return new WaitForSeconds(5);
+            }
+        }
+        #endif
+
         if(currentData.UseModel != null) {
             UITabCenter.instance.AR3DPanel.SetupArtwork(currentData.UseModel);
         } else if (currentData.UseMask != null) {
             UITabCenter.instance.AR3DPanel.SetupStreetPhoto(currentData.UseMask);
         }
         UITabCenter.instance.AR3DPanel.gameObject.SetActive(true);
+    }
+
+    void OpenAR2D(){
+        StartCoroutine(CheckAR2D());
+    }
+
+    void OpenAR3D(){
+        StartCoroutine(CheckAR3D());
     }
 
     void CloseInfo(){
