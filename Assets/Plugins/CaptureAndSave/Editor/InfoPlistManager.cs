@@ -21,8 +21,11 @@ public class InfoPlistManager : MonoBehaviour
 
         // Update value
         PlistElementDict rootDict = plist.root;
-        rootDict.SetString("NSPhotoLibraryUsageDescription", "Used for reading library content");
-	rootDict.SetString("NSPhotoLibraryAddUsageDescription", "Used for adding content to library");
+        rootDict.SetString("NSPhotoLibraryUsageDescription", "請啟用設定來開啟拍照功能");
+	    rootDict.SetString("NSPhotoLibraryAddUsageDescription", "請啟用設定來開啟拍照功能");
+        
+        var rootDicVal = rootDict.values;
+        rootDicVal.Remove("UIApplicationExitsOnSuspend");
 
         // Write plist
         File.WriteAllText(plistPath, plist.WriteToString());
