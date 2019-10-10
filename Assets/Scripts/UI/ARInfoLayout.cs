@@ -195,7 +195,9 @@ public class ARInfoLayout : PanelExtendtion
 
         ContentText.rectTransform.localPosition = ContentTextPos;
 
+        #if !UNITY_IOS
         Open2D.gameObject.SetActive(true);
+        #endif
         Open3D.gameObject.SetActive(true);
 
         contentSizeController.ResizeContent();
@@ -221,7 +223,9 @@ public class ARInfoLayout : PanelExtendtion
 
         ContentText.rectTransform.localPosition = ContentTextPos;
 
+        #if !UNITY_IOS
         Open2D.gameObject.SetActive(true);
+        #endif
         Open3D.gameObject.SetActive(true);
         
         contentSizeController.ResizeContent();

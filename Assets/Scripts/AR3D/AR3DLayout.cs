@@ -13,6 +13,8 @@ public class AR3DLayout : MonoBehaviour
     public Button BTNTracking;
     public Transform ArtworkPool;
 
+    public GameObject HelpCanvas;
+
     SaveScreen saveScreen;
 
     void Awake(){
@@ -23,6 +25,8 @@ public class AR3DLayout : MonoBehaviour
         Screen.autorotateToLandscapeLeft = true;
         Screen.autorotateToLandscapeRight = true;
         Screen.orientation = ScreenOrientation.AutoRotation;
+
+        HelpCanvas.SetActive(true);
     }
 
     void OnDisable() {
