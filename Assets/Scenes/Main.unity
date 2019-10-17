@@ -14235,10 +14235,10 @@ MonoBehaviour:
   IconRateRefScreen: 0.2
   portraitRate: 0.3
   portraitX: 30
-  portraitY: 15
+  portraitY_R: 0.02
   landRate: 0.2
   landX: 15
-  landY: 30
+  landY_R: 0.03
   Logo: {fileID: 0}
   debugText: {fileID: 1930029738}
 --- !u!1 &1137222110

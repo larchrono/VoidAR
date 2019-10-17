@@ -10,10 +10,10 @@ public class LogoResizer : MonoBehaviour
 
     public float portraitRate = 0.3f;
     public float portraitX = 30;
-    public float portraitY = 15;
+    public float portraitY_R = 0.02f;
     public float landRate = 0.2f;
     public float landX = 15;
-    public float landY = 30;
+    public float landY_R = 0.03f;
 
 
     public Image Logo;
@@ -57,7 +57,7 @@ public class LogoResizer : MonoBehaviour
         Vector2 size = new Vector2(iconW, iconH);
         Logo.rectTransform.sizeDelta = size;
 
-        Logo.rectTransform.anchoredPosition = new Vector2(portraitX, portraitY);
+        Logo.rectTransform.anchoredPosition = new Vector2(portraitX, Screen.height * portraitY_R);
 
     }
 
@@ -68,7 +68,7 @@ public class LogoResizer : MonoBehaviour
         Vector2 size = new Vector2(iconW, iconH);
         Logo.rectTransform.sizeDelta = size;
 
-        Logo.rectTransform.anchoredPosition = new Vector2(landX, landY);
+        Logo.rectTransform.anchoredPosition = new Vector2(landX, Screen.height * landY_R);
 
     }
 }
