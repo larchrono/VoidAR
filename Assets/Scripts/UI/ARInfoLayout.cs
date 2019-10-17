@@ -100,7 +100,8 @@ public class ARInfoLayout : PanelExtendtion
     }
 
     public void CheckOpenARReady(){
-        if(currentData == PlayerEvent.instance.arrivePOI){
+        //if(currentData == PlayerEvent.instance.arrivePOI){
+        if(PlayerEvent.instance.arrivePOI.Contains(currentData)){
             Open2D.interactable = true;
             Open3D.interactable = true;
         } else {
@@ -196,7 +197,7 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.rectTransform.localPosition = ContentTextPos;
 
         #if !UNITY_IOS
-        Open2D.gameObject.SetActive(true);
+        //Open2D.gameObject.SetActive(true);
         #endif
         Open3D.gameObject.SetActive(true);
 
@@ -224,7 +225,7 @@ public class ARInfoLayout : PanelExtendtion
         ContentText.rectTransform.localPosition = ContentTextPos;
 
         #if !UNITY_IOS
-        Open2D.gameObject.SetActive(true);
+        //Open2D.gameObject.SetActive(true);
         #endif
         Open3D.gameObject.SetActive(true);
         
