@@ -13,7 +13,7 @@ public class PlayerEvent : MonoBehaviour
 
     public Action<double> OnUpdateDistance;
     
-    public POIData arrivePOI;
+    public List<POIData> arrivePOI = new List<POIData>();
 
     void Awake(){
         instance = this;
@@ -62,8 +62,9 @@ public class PlayerEvent : MonoBehaviour
         Debug.Log("Entering~ ");
         if (other.tag == "POI")
         {
-            arrivePOI = other.GetComponent<POIData>();
-            ARInfoLayout.instance.PanelNaving.FinishedNaving(arrivePOI, GetTargetDistance(arrivePOI.transform));
+            var poi = other.GetComponent<POIData>();
+            arrivePOI.Add(poi);
+            ARInfoLayout.instance.PanelNaving.FinishedNaving(poi, GetTargetDistance(poi.transform));
 
             //Shake Device
             Handheld.Vibrate();
@@ -82,7 +83,9 @@ public class PlayerEvent : MonoBehaviour
     {
         if (other.tag == "POI")
         {
-            arrivePOI = null;
+            //arrivePOI = null;
+            var poi = other.GetComponent<POIData>();
+            arrivePOI.Remove(poi);
 
             if(other.gameObject.transform.childCount == 0)
                 return;

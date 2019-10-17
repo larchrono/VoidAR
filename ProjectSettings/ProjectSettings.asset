@@ -160,7 +160,7 @@ PlayerSettings:
     Android: com.Artpower.VoidARDanei
     iOS: com.Artpower.VoidARDanei
   buildNumber: {}
-  AndroidBundleVersionCode: 35
+  AndroidBundleVersionCode: 41
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
