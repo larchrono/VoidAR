@@ -52,6 +52,7 @@ public class ScriptsCamera : MonoBehaviour
             return;
 
         runningWebcam.Pause();
+        runningWebcam.Stop();
         runningWebcam = null;
         camAvailable = false;
     }

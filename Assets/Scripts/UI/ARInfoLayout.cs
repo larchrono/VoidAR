@@ -277,8 +277,8 @@ public class ARInfoLayout : PanelExtendtion
         }
         
 
-        ArtworkLink.interactable = false;
-        ArtworkInfo.Artist.text = "";
+        ArtworkLink.interactable = true;
+        ArtworkInfo.Artist.text = currentData.ArtistName;
         ArtworkInfo.Artwork.text = "";
         ArtworkInfo.MaterialInfo.text = "";
         ArtworkInfo.SizeInfo.text = "";
@@ -286,6 +286,8 @@ public class ARInfoLayout : PanelExtendtion
 
         Open2D.gameObject.SetActive(false);
         Open3D.gameObject.SetActive(false);
+        if(currentData.ForceUseUnlockAR)
+            Open3D.gameObject.SetActive(true);
         
         contentSizeController.ResizeContent();
     }
