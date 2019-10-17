@@ -149,6 +149,8 @@ public class MapNav : MonoBehaviour
 	private Vector2 focusScreenPoint;
 	private Vector3 focusWorldPoint;
 
+	public Action OnMapReady;
+
 	void Awake(){
 		//Set the map's tag to GameController
 		transform.tag = "GameController";
@@ -635,7 +637,7 @@ public class MapNav : MonoBehaviour
 		user.gameObject.GetComponent<Renderer>().enabled = true;
 		ready = true;
 		mapping = false;
-		
+		OnMapReady?.Invoke();
 	}
 
 	//USING OFFLINE BACKGROUND TEXTURE

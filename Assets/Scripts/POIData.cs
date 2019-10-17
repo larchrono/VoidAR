@@ -39,6 +39,7 @@ public class POIData : MonoBehaviour
     public string PhotoSource;
     public GameObject UseMask;
 
+    public bool ForceUseUnlockAR = false;
 
     void Start()
     {
