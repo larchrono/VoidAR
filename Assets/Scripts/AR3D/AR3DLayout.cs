@@ -34,7 +34,8 @@ public class AR3DLayout : MonoBehaviour
     void CheckAngleAndButton(float angle){
         if(displayType == 0)
         {
-            if(angle > 65 && angle < 75){
+            //if(angle > 65 && angle < 75){
+            if(angle > 15 && angle < 25){
                 BTNTracking.interactable = true;
                 TXTFacingAngle.color = Color.green;
             } else {
@@ -44,7 +45,7 @@ public class AR3DLayout : MonoBehaviour
         } 
         else if(displayType == 1)
         {
-            if(angle > 80){
+            if(angle < 10 && angle > 0){
                 BTNTracking.interactable = true;
                 TXTFacingAngle.color = Color.green;
             } else {
@@ -57,7 +58,7 @@ public class AR3DLayout : MonoBehaviour
     void Update(){
         if(updateIndex > updateDelay){
             float angle = GetFacingAngle();
-            TXTFacingAngle.text = angle.ToString("0");
+            TXTFacingAngle.text = (90-angle).ToString("0");
             updateIndex = 0;
             CheckAngleAndButton(angle);
 
@@ -139,7 +140,7 @@ public class AR3DLayout : MonoBehaviour
     }
 
     public float GetFacingAngle(){
-        return Mathf.Asin(-Mathf.Clamp(Input.acceleration.y, -1, 1)) *  Mathf.Rad2Deg;
+        return Mathf.Asin(-Mathf.Clamp(Input.acceleration.z, -1, 1)) *  Mathf.Rad2Deg;
     }
 
     

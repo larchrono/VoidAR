@@ -16687,13 +16687,12 @@ PrefabInstance:
         type: 3}
       propertyPath: UseModel
       value: 
-      objectReference: {fileID: 1136991739688831641, guid: 6842a241314119b44ad4bf89827c2729,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: UseMask
       value: 
-      objectReference: {fileID: 2629774274621471059, guid: 9c36607722b149a43a768a774bbca5a8,
+      objectReference: {fileID: 5307047385841327782, guid: 6c89416f5a5334c4587274cf83a3726a,
         type: 3}
     - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
@@ -16706,6 +16705,27 @@ PrefabInstance:
       propertyPath: ArtContent
       value: "\u6E2C\u8A66\u7528\u8CC7\u6599"
       objectReference: {fileID: 0}
+    - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: typeOfPOI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: ViewpointPhoto
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d78bb4097a404a488397d30fb1657b6,
+        type: 3}
+    - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: ViewpointName
+      value: "RS\u4F11\u9592\u6982\u5FF5\u9928\u7AF9\u570D\u5E97"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388346249367221561, guid: 4943698350ffbc04bbb98416bb089264,
+        type: 3}
+      propertyPath: ViewpointContent
+      value: "\u6E2C\u8A66\u7528\u8CC7\u6599"
+      objectReference: {fileID: 0}
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lat
@@ -16714,7 +16734,7 @@ PrefabInstance:
     - target: {fileID: 6388346249367221560, guid: 4943698350ffbc04bbb98416bb089264,
         type: 3}
       propertyPath: lon
-      value: 121.46027
+      value: 121.4604
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4943698350ffbc04bbb98416bb089264, type: 3}
