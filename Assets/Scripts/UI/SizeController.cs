@@ -22,6 +22,17 @@ public class SizeController : MonoBehaviour
         rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, total + constHeight);
     }
 
+    [ContextMenu("Resize in Editor")]
+    public void Run(){
+        rectTransform = GetComponent<RectTransform>();
+        float total = 0;
+        foreach (var item in items)
+        {
+            total += item.sizeDelta.y;
+        }
+        rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, total + constHeight);
+    }
+
     public void ResizeContent(){
         StartCoroutine(Start());
     }

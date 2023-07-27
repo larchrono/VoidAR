@@ -10,6 +10,16 @@ public class UITabCenter : MonoBehaviour
         instance = this;
     }
 
+    void Start(){
+        PanelMenu.interactable = true;
+        PanelMenu.alpha = 1;
+        PanelMenu.blocksRaycasts = true;
+
+        // Panel_MenuTab.interactable = true;
+        // Panel_MenuTab.alpha = 1;
+        // Panel_MenuTab.blocksRaycasts = true;
+    }
+
     [HideInInspector] public PageBehaviour currentPanel;
     public List<PanelWindow> flowWindows;
 
