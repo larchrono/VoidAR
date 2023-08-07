@@ -9,7 +9,7 @@ public class PlayerEvent : MonoBehaviour
     public static PlayerEvent instance;
     public Transform FollowNavegater;
 
-    GetDistance distanceTool;
+    //GetDistance distanceTool;
 
     public Action<double> OnUpdateDistance;
     
@@ -21,8 +21,8 @@ public class PlayerEvent : MonoBehaviour
 
     void Start()
     {
-        distanceTool = GetComponent<GetDistance>();
-        StartCoroutine(DoSendDistance(distanceTool.updateRate));
+        //distanceTool = GetComponent<GetDistance>();
+        //StartCoroutine(DoSendDistance(distanceTool.updateRate));
 
         StartCoroutine(DelayOpenCollider());
     }
@@ -39,22 +39,23 @@ public class PlayerEvent : MonoBehaviour
     }
 
     public void SetTargetGoal(Transform target){
-        distanceTool.waypoints[1] = target;
+        //distanceTool.waypoints[1] = target;
     }
 
     public void ClearTargetGoal(){
-        distanceTool.waypoints[1] = transform;
+        //distanceTool.waypoints[1] = transform;
     }
 
     public IEnumerator DoSendDistance(float rate){
         while(true){
-            OnUpdateDistance?.Invoke(distanceTool.metersDist);
+            //OnUpdateDistance?.Invoke(distanceTool.metersDist);
             yield return new WaitForSeconds(rate);
         }
     }
 
     public double GetTargetDistance(Transform target){
-        return distanceTool.GetSingleDistance(transform, target);
+        //return distanceTool.GetSingleDistance(transform, target);
+        return 0;
     }
 
     void OnTriggerEnter(Collider other)

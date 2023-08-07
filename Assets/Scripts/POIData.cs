@@ -45,7 +45,7 @@ public class POIData : MonoBehaviour
     {
         eventCollider = GetComponent<SphereCollider>();
         MapController.CollisionRangeHandler += OnCollisionRangeHandler;
-        spriteLoc = Icon.sprite;
+        if(Icon) spriteLoc = Icon.sprite;
     }
 
     // Update is called once per frame

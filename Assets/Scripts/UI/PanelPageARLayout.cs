@@ -6,32 +6,15 @@ using UnityEngine.UI;
 
 public class PanelPageARLayout : MonoBehaviour
 {
-    public Button NavLocate;
-    public Button NavTop;
-    public Button NavBottom;
-    public Button NavLeft;
-    public Button NavRight;
+    public Button BTN_Here;
+    public Button BTN_GoMap;
 
-    public Image TextUpdating;
     void Start()
     {
-        NavLocate.onClick.AddListener(() => { OnPressNavLocate?.Invoke(); });
-        NavTop.onClick.AddListener(() => { OnPressNavTop?.Invoke(); });
-        NavBottom.onClick.AddListener(() => { OnPressNavBottom?.Invoke(); });
-        NavLeft.onClick.AddListener(() => { OnPressNavLeft?.Invoke(); });
-        NavRight.onClick.AddListener(() => { OnPressNavRight?.Invoke(); });
-
-        NavLocate.gameObject.SetActive(false);
-        NavTop.gameObject.SetActive(false);
-        NavBottom.gameObject.SetActive(false);
-        NavLeft.gameObject.SetActive(false);
-        NavRight.gameObject.SetActive(false);
-        TextUpdating.gameObject.SetActive(false);
+        BTN_Here.onClick.AddListener(() => { OnPressHere?.Invoke(); });
+        BTN_GoMap.onClick.AddListener(() => { OnPressGoMap?.Invoke(); });
     }
 
-    public Action OnPressNavLocate;
-    public Action OnPressNavTop;
-    public Action OnPressNavBottom;
-    public Action OnPressNavLeft;
-    public Action OnPressNavRight;
+    public Action OnPressHere;
+    public Action OnPressGoMap;
 }

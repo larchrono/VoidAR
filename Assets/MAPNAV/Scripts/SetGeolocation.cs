@@ -19,7 +19,7 @@ public class SetGeolocation : MonoBehaviour
     public bool mercatorDistortion;
     private float initX;
     private float initZ;
-    private MapNav gps;
+    //private MapNav gps;
     private bool gpsFix;
     private float fixLat;
     private float fixLon;
@@ -29,25 +29,25 @@ public class SetGeolocation : MonoBehaviour
     void Awake()
     {
         //Reference to the MapNav.js script and gpsFix variable. gpsFix will be true when a valid location data has been set.
-        gps = GameObject.FindGameObjectWithTag("GameController").GetComponent<MapNav>();
-        gpsFix = gps.gpsFix;
-        mapScale = gps.mapScale;
+        //gps = GameObject.FindGameObjectWithTag("GameController").GetComponent<MapNav>();
+        //gpsFix = gps.gpsFix;
+        //mapScale = gps.mapScale;
     }
 
-    IEnumerator Start()
-    {
-        //Wait until the gps sensor provides a valid location.
-        while (!gpsFix)
-        {
-            gpsFix = gps.gpsFix;
-            yield return null;
-        }
-        //Read initial position (used as a reference system)
-        initX = gps.iniRef.x;
-        initZ = gps.iniRef.z;
-        //Set object geo-location
-        GeoLocation();
-    }
+    // IEnumerator Start()
+    // {
+    //     //Wait until the gps sensor provides a valid location.
+    //     while (!gpsFix)
+    //     {
+    //         gpsFix = gps.gpsFix;
+    //         yield return null;
+    //     }
+    //     //Read initial position (used as a reference system)
+    //     initX = gps.iniRef.x;
+    //     initZ = gps.iniRef.z;
+    //     //Set object geo-location
+    //     GeoLocation();
+    // }
 
     [ContextMenu("GeoLocation")]
 
@@ -74,19 +74,19 @@ public class SetGeolocation : MonoBehaviour
     }
 
     //This function is to be used by SetGeoInspector.cs
-    public void EditorGeoLocation()
-    {
-        gps = GameObject.FindGameObjectWithTag("GameController").GetComponent<MapNav>();
-        fixLat = gps.fixLat;
-        fixLon = gps.fixLon;
-        mapScale = gps.mapScale;
+    // public void EditorGeoLocation()
+    // {
+    //     gps = GameObject.FindGameObjectWithTag("GameController").GetComponent<MapNav>();
+    //     fixLat = gps.fixLat;
+    //     fixLon = gps.fixLon;
+    //     mapScale = gps.mapScale;
 
-        initX = fixLon * 20037508.34f / (180*mapScale);
-        initZ = (float) (System.Math.Log(System.Math.Tan((90 + fixLat) * System.Math.PI / 360)) / (System.Math.PI / 180));
-        initZ = initZ * 20037508.34f / (180*mapScale);
+    //     initX = fixLon * 20037508.34f / (180*mapScale);
+    //     initZ = (float) (System.Math.Log(System.Math.Tan((90 + fixLat) * System.Math.PI / 360)) / (System.Math.PI / 180));
+    //     initZ = initZ * 20037508.34f / (180*mapScale);
 
-        GeoLocation();
-    }
+    //     GeoLocation();
+    // }
 
     //Convert  WGS84 to WebMercator
     Vector3 WGS84toWebMercator(float _lon, float _lat, float _height)

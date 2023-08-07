@@ -5,22 +5,23 @@ using UnityEngine.UI;
 
 public class MenuLayout : PanelExtendtion
 {
+    public Button BTNAR;
     public Button BTNNews;
     public Button BTNExhibition;
-    public Button BTNAR;
     public Button BTNArtBus;
     public Button BTNActivity;
     public Button BTNAbout;
+    public WorkTabLayout workTabLayout;
     void Start()
     {
-        BTNNews.onClick.        AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelNew); });
+        BTNAR.onClick.          AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelAR); workTabLayout.ToAR();});
+        BTNNews.onClick.        AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelNew); workTabLayout.ToNews();});
         BTNExhibition.onClick.  AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelExhibition); });
-        BTNAR.onClick.          AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelAR); });
         BTNArtBus.onClick.      AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelArtBus); });
         BTNActivity.onClick.    AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelActivity); });
         BTNAbout.onClick.       AddListener(() => { SwitchToPanel(UITabCenter.instance.PanelAbout); });
 
-        OpenSelf(null);
+        //OpenSelf(null);
     }
 
     void SwitchToPanel(PageBehaviour targetPanel)

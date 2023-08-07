@@ -53,11 +53,17 @@ public class ARInfoLayout : PanelExtendtion
         Open3D.onClick.AddListener(OpenAR3D);
 
         ContentTextPos = ContentText.rectTransform.localPosition;
+
+        POI.POIManager.instance.OnUserClickPoi += ClickPOI;
     }
 
     void Update(){
         //BTNStart.interactable = currentData.CanStartAR;
 
+    }
+
+    void ClickPOI(POI.POIData data){
+        OpenPanelRegular(data.oldData, 0);
     }
 
     public void OpenPanelRegular(POIData data , double distance){
@@ -73,7 +79,7 @@ public class ARInfoLayout : PanelExtendtion
             ARInfoLayout.instance.RefreshInfoGallery_FromPOI();
 
          ARInfoLayout.instance.SetMeterDistanceDisplay(distance);
-         CheckOpenARReady();
+         //CheckOpenARReady();
          OpenSelf(null);
     }
 
@@ -101,6 +107,8 @@ public class ARInfoLayout : PanelExtendtion
 
     public void CheckOpenARReady(){
         //if(currentData == PlayerEvent.instance.arrivePOI){
+
+        //檢查是否離目標接近
         if(PlayerEvent.instance.arrivePOI.Contains(currentData)){
             Open2D.interactable = true;
             Open3D.interactable = true;

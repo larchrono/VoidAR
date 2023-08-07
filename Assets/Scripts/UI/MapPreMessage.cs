@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MapPreMessage : MonoBehaviour
 {
-    public MapNav GoogleMap;
-    void Start()
-    {
-        GoogleMap.OnMapReady += OnMapReady;
-    }
+    // public MapNav GoogleMap;
+    // void Start()
+    // {
+    //     GoogleMap.OnMapReady += OnMapReady;
+    // }
 
-    void OnMapReady(){
-        GoogleMap.OnMapReady -= OnMapReady;
-        Destroy(gameObject);
-    }
+    // void OnMapReady(){
+    //     GoogleMap.OnMapReady -= OnMapReady;
+    //     Destroy(gameObject);
+    // }
 }
