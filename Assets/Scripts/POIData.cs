@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Sirenix.OdinInspector;
 using Ideafixxxer.CsvParser;
 
 [RequireComponent(typeof(SphereCollider))]
@@ -63,7 +62,8 @@ public class POIData : MonoBehaviour
 
     [Space(40)] public TextAsset csvFile;
     public int csvIndex = 1;
-    [Button]
+
+    [ContextMenu("ImportPOIData")]
     public void ImportPOIData(){
         if(csvFile == null)
             return;
@@ -82,7 +82,7 @@ public class POIData : MonoBehaviour
         ArtistContent = csvTable[csvIndex][7]; // Artist Info
         ArtContent = csvTable[csvIndex][8]; // Art Info
     }
-    [Button]
+    [ContextMenu("POINameToArtistName")]
     public void POINameToArtistName(){
         POI_Name = ArtworkName;
     }

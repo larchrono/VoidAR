@@ -19,11 +19,11 @@ public class ForceOrientation : MonoBehaviour
 
     IEnumerator ForceAndFixPortrait()
     {
-        ScreenOrientation prev = ScreenOrientation.Landscape;
+        ScreenOrientation prev = ScreenOrientation.LandscapeLeft;
         for (int i = 0; i < 3; i++)
         {
             Screen.orientation = 
-                (prev == ScreenOrientation.Landscape ? ScreenOrientation.Portrait : ScreenOrientation.Landscape);
+                (prev == ScreenOrientation.LandscapeLeft ? ScreenOrientation.Portrait : ScreenOrientation.LandscapeLeft);
             yield return new WaitWhile(() => {
                 return prev == Screen.orientation;
             });

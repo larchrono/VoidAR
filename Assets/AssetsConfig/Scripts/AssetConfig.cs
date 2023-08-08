@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Sirenix.Utilities;
 
-[GlobalConfig("Resources/")]
-public class AssetConfig : GlobalConfig<AssetConfig>
+public class AssetConfig : MonoBehaviour
 {
+    public static AssetConfig Instance;
+
+    void Awake(){
+        Instance = this;
+    }
+
     public bool UseTouchColor = true;
     public Color TouchAreaColor = Color.green;
 
