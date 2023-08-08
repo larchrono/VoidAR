@@ -163,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Artpower.VoidARDanei
   buildNumber: {}
-  AndroidBundleVersionCode: 61
+  AndroidBundleVersionCode: 63
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
