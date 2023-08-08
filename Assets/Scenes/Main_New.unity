@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44432396, g: 0.49351072, b: 0.5725249, a: 1}
+  m_IndirectSpecularColor: {r: 0.44417036, g: 0.49333727, b: 0.5723226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6137,7 +6137,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1601333904}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.22465622
+  m_Size: 0.24867256
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16978,7 +16978,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019766773}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -20502,7 +20502,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264194400}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -32263,6 +32263,7 @@ GameObject:
   - component: {fileID: 2022796032}
   - component: {fileID: 2022796034}
   - component: {fileID: 2022796033}
+  - component: {fileID: 2022796035}
   m_Layer: 5
   m_Name: Text Content
   m_TagString: Untagged
@@ -32287,8 +32288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 5932.2}
+  m_AnchoredPosition: {x: 492.5, y: 0}
+  m_SizeDelta: {x: 965, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2022796033
 MonoBehaviour:
@@ -32318,7 +32319,7 @@ MonoBehaviour:
     \u8521\u6BD3\u5AFB\u3001\u5ED6\u6620\u8FB0\u3001\u59DA\u59A4\u8431\r\nAR\u57F7\u884C\u5718\u968A\uFF1A\u6709\u96FB\u4E92\u52D5
     (\u85CD\u82E1\u73CA\u3001\u8A79\u5A9B\u5B89\u3001\u92FC\u9435\u5C0F\u9CE5)\r\n\r\n\u4E3B\u8FA6\u55AE\u4F4D\uFF1A\u81FA\u5317\u5E02\u85DD\u8853\u7522\u696D\u5354\u6703\r\n\u57F7\u884C\u55AE\u4F4D\uFF1A\u81FA\u5317\u5E02\u85DD\u8853\u7522\u696D\u5354\u6703\r\n\u6307\u5C0E\u55AE\u4F4D\uFF1A\u6587\u5316\u90E8\r\n\u8D0A\u52A9\u55AE\u4F4D\uFF1A\u81FA\u5317\u5E02\u653F\u5E9C\u6587\u5316\u5C40\u3001SAMSUNG\u3001\u738B\u9053\u9280\u884C\u6559\u80B2\u57FA\u91D1\u6703\u3001\u5C0A\u5F69\u85DD\u8853\u4E2D\u5FC3\r\n\u5A92\u9AD4\u55AE\u4F4D\uFF1A\u975E\u6C60\u4E2D\u3001\u4ECA\u85DD\u8853\u3001CANS\u85DD\u8853\u65B0\u805E\r\n\u7279\u5225\u611F\u8B1D\uFF1A\u5B78\u5B78XUE
     XUE\u3001\u81FA\u5317\u5E02\u5167\u6E56\u5340\u516C\u6240\u3001\u5289\u662D\u8F1D\u3001\u5CF6\u5167\u6563\u6B65WALK
-    in TAIWAN\u3001\u81FA\u5317\u5E02\u7ACB\u5167\u6E56\u9AD8\u7D1A\u5DE5\u696D\u8077\u696D\u5B78\u6821\u3001\u6587\u5FC3\u85DD\u8853\u57FA\u91D1\u6703\r"
+    in TAIWAN\u3001\u81FA\u5317\u5E02\u7ACB\u5167\u6E56\u9AD8\u7D1A\u5DE5\u696D\u8077\u696D\u5B78\u6821\u3001\u6587\u5FC3\u85DD\u8853\u57FA\u91D1\u6703\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1610e1a9d23772740909cdef8c0ff2cb, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: ff7f81ceb00c0614580454e52eac7f95, type: 2}
@@ -32395,6 +32396,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022796031}
   m_CullTransparentMesh: 0
+--- !u!114 &2022796035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022796031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &2052056042
 GameObject:
   m_ObjectHideFlags: 0
@@ -33520,7 +33535,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.00024414062}
-  m_SizeDelta: {x: -10, y: 6254}
+  m_SizeDelta: {x: -10, y: 5650}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2094627950
 MonoBehaviour:
@@ -33538,7 +33553,7 @@ MonoBehaviour:
     m_Left: 10
     m_Right: 10
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: 20
   m_ChildAlignment: 1
   m_Spacing: 25
   m_ChildForceExpandWidth: 1
