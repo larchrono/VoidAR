@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
  
+[ExecuteInEditMode]
 public class TakeScreenshotInEditor : ScriptableObject
 {
     public static string fileName = "Editor Screenshot ";
@@ -16,7 +17,7 @@ public class TakeScreenshotInEditor : ScriptableObject
         {
             number++;
             name = "" + number;
-        }
+        } 
  
         startNumber = number + 1;
  
